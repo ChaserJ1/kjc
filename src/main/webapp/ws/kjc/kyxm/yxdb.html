@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>科技处</title>
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <!-- <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script> -->
+    <link rel="stylesheet" href="/webscience/ws/cugb/css/swiper.min.css">
+    <link rel="stylesheet" href="/webscience/ws/cugb/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/hometop.css">
+    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/indexmb1.css">
+    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/list.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/lib-master/theme-chalk/index.css" />
+    <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script>
+    <script src="/webscience/ws/cugb/js/idangerous.swiper.min.js"></script>
+    <script src="/webscience/ws/cugb/js/scrollReveal.js" async></script>
+    <script src="/webscience/ws/cugb/js/anime.min.js" async></script>
+    <script src="/webscience/ws/cugb/js/paging.js"></script>
+    <!-- 引入amchart核心文件 -->
+    <script src="/webscience/ws/cugb/js/core.js"></script>
+    <script src="/webscience/ws/cugb/js/charts.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/animated.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/material.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/dataviz.js"></script>
+    <script src="/webscience/ws/cugb/js//themes/amchartsdark.js"></script>
+    <script src="/webscience/ws/cugb/js//themes/dark.js"></script>
+    <script src="/webscience/ws/cugb/js//themes/frozen.js"></script>
+    <script src="/webscience/ws/cugb/js//themes/kelly.js"></script>
+    <script src="/webscience/ws/cugb/js//themes/moonrisekingdom.js"></script>
+    <script src="/webscience/ws/cugb/js//themes/patterns.js"></script>
+    <script>
+        function loadJS(url, callback) {
+            var script = document.createElement('script');
+            var fn = callback || function () { };
+            script.type = 'text/javascript';
+
+            if (script.readyState) { //IE
+                script.onreadystatechange = function () {
+                    if (script.readyState == 'loaded' || script.readyState == 'complete') {
+                        script.onreadystatechange = null;
+                        fn();
+                    }
+                };
+
+            } else { //其他浏览器
+                script.onload = function () {
+                    fn();
+                };
+            }
+
+            script.src = url;
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+        function deviceProbing() {
+            var reg = /([a-zA-Z]+)?([a-zA-Z]+.*\;\s([a-zA-Z0-9]+)?)/
+            var newNav = navigator.appVersion.match(reg);
+            if (newNav) {
+                var nav = newNav[0];
+                var navArr = nav.split(/(\s)|((\s\d\.\d)?\;)/);
+                var flag = false;
+                for (var i = 0, len = navArr.length; i < len; i++) {
+                    if (navArr[i] == 'Android' || navArr[i] == 'iPhone' || navArr[i] == 'iPad' || navArr[i] == 'MeeGo' || navArr[i] == 'NokiaN9' || navArr[i] == 'NOKIA') {
+                        flag = true;
+                        break;
+                    } else {
+                        flag = false;
+                    }
+                }
+                return flag;
+            }
+        }
+        function getFontSize() {
+            var deviceWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+            window.onresize = function () {
+                var deviceWidth = document.documentElement.clientWidth;
+                document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+            };
+        }
+        function IEVersion() {
+            //取得浏览器的userAgent字符串
+            var userAgent = navigator.userAgent;
+            //判断是否IE浏览器
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1;
+            if (isIE) {
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                if (fIEVersion < 10) {
+                    return true;
+                }
+            } else {
+                return false;
+            }
+        }
+        var page_border_height = '3px';
+        if (deviceProbing()) {
+            page_border_height = '0.03rem';
+            getFontSize();
+            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobile.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobilelist.css">');
+            loadJS('/webscience/ws/cugb/js/mobilepclist.js');
+        } else {
+            $('html').css('font-size', '');
+            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/pcmedia.css">');
+            if (IEVersion()) {
+                // document.write('<link rel="stylesheet" type="text/css" href="/kjc/css/pcIe.css">');
+                loadJS('/webscience/ws/cugb/js/pclist.js');
+            } else {
+                loadJS('/webscience/ws/cugb/js/pclist.js');
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- header logo -->
+    <div class="home_headerbox">
+        <div class="home_nav" id='homehead'>
+            <a href="https://cms.cugb.edu.cn/kjc/">
+                <div class="hn_logo"><img src='https://bm.cugb.edu.cn/kjc/images/kjc.png' /></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="home_pagemainbox">
+        <!-- 轮播背景图区域 -->
+        <div class="home_banner home_listbanner">
+            <div class="container">
+                <div class="timeline">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"
+                                style="background: url('https://bm.cugb.edu.cn/kjc/images/01.png') no-repeat top center/100% auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_banner_botbox">
+                <div class="list_title">科研项目</div>
+                <div class="list_back"><a href="javascript:void(0)" onclick="history.go(-1);">
+                        <img src="https://bm.cugb.edu.cn/kjc/images/list/jiantou_icon.png" />
+                        <label>返回</label>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 内容详情区 -->
+        <div id="app">
+            <div class="detail_box" id='list_detail_box'>
+                <div class="detail_title_box">
+                    <div style="text-align: center;padding-top: 10px;">
+                        <a @click="clickAll(0)" href="javascript:;">[全部]</a>
+                        <a @click="changeYear(item.id)" style="margin-right: 2px;" v-for="(item) in yearArr"
+                            :key="item.id" href="javascript:;">[{{item.year}}]
+                        </a>
+                        <!-- <el-select style="margin-left: 40px;" size="mini" width="30" v-model="valueBegin" placeholder="请选择">
+                        <el-option v-for="item in yearArr" :key="item.id" :value="item.year">
+                        </el-option>
+                    </el-select>
+                    -
+                    <el-select size="mini" width="30" v-model="valueEnd" placeholder="请选择">
+                        <el-option v-for="item in yearArr" :key="item.id" :value="item.year">
+                        </el-option>
+                    </el-select>
+                    <el-button @click="search(valueBegin,valueEnd)" size="mini" type="primary">查询</el-button> -->
+                    </div>
+                    <div class="detail_title" v-if="year=='' || year==0" style="padding-top: 20px;">·中国地质大学（北京）
+                        {{valueBegin}}-{{valueEnd}}年度 年度基金排行榜</div>
+                    <div class="detail_title" v-else style="padding-top: 20px;">·中国地质大学（北京） {{year}}年度 年度基金排行榜</div>
+                    <!-- pc端 时间 次数 -->
+                    <!-- <div class="detail_info"><label>发布时间：2021-06-17</label><label>阅读：<span id="hitcount691753">0</span>
+                        
+                        次
+                    </label></div> -->
+                    <!-- 移动端 时间 次数 发布人-->
+                    <!-- <div class="m_detail_info">
+                    <div>
+                        <label>[信息网络中心]魏玮</label>
+                        <label>06月17日</label>
+                    </div>
+                    <div>
+                    </div>
+                </div> -->
+                    <div class="btn-wrap" style="text-align: center;margin-top: 10px;">
+                        <el-button @click="changeFundType(0)" type="primary" size="mini">全部基金</el-button>
+                        <el-button @click="changeFundType(4)" type="primary" size="mini">重点基金</el-button>
+                        <el-button @click="changeFundType(5)" type="primary" size="mini">面上基金</el-button>
+                        <el-button @click="changeFundType(1)" type="primary" size="mini">青年基金</el-button>
+                        <el-button @click="changeFundType(3)" type="primary" size="mini">人才基金</el-button>
+                        <el-button @click="changeFundType(2)" type="primary" size="mini">其他基金</el-button>
+                    </div>
+
+                </div>
+                <div class="detail_content_box">
+                    <div>
+                        <p v-if="year=='' || year==0" style="font-size: 13px;font-weight: bold;padding-bottom: 20px;">
+                            ·{{valueBegin}}-{{valueEnd}}年度{{fund[fundTypeCode]}}
+                        <p v-else style="font-size: 13px;font-weight: bold;padding-bottom: 20px;">
+                            ·{{year}}年度{{fund[fundTypeCode]}}
+                        </p>
+                        <p style="font-size:11px;margin-bottom:5px">基金排名仅供我校师生参考，勿随意传播。</p>
+                        <el-table border size="medium" :data="tableData" style="width: 100%">
+                            <el-table-column label="排名" align="center" type="index" width="50">
+                            </el-table-column>
+                            <el-table-column prop="deptName" align="center" label="单位名称" width="180">
+                                <template slot-scope="scope">
+                                    <a href='javascript:;' @click="toPaperList(scope.row)">
+                                        {{scope.row.deptName}}
+                                    </a>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="percenTage" align="center" label="占项目总数百分比示意" width="165">
+                                <template slot-scope="scope">
+                                    <div class="charts" :style=`width:${scope.row.rate}%`></div>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="rate" align="center" label="百分比数值">
+                                <template slot-scope="scope">
+                                    {{scope.row.rate}}%
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="number" align="center" label="项目数量">
+                            </el-table-column>
+                        </el-table>
+                        <p style="float: right;font-size: 13px;font-weight: bold;">·{{fund[fundTypeCode]}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 PC -->
+        <div class="home_bottom">
+            <div class="home_bot_box">
+                <div class="home_bot_link home_bot_banquan">
+                    <div class="home_bot_linktitle">版权信息</div>
+                    <ul class="home_bot_banquanbox">
+                        <li>版权所有:中国地质大学(北京)</li>
+                        <li>地址:北京市海淀区学院路29号</li>
+                        <li>邮编:100083</li>
+                        <li>文保网安备案:1101080023</li>
+                        <li>技术支持:信息网络中心</li>
+                    </ul>
+                </div>
+
+                <div class="home_bot_link home_bot_gongzhong">
+                    <div class="home_bot_gongzhong_text">
+                        <div class="home_bot_linktitle">公众号 </div>
+                        <ul class="home_bot_linkbox">
+                            <li>扫码关注公众号</li>
+                            <li>浏览最新文章信息</li>
+                        </ul>
+                    </div>
+                    <div class="home_bot_gongzhong_img">
+
+                        <img src="https://bm.cugb.edu.cn/kjc/upload/resources/image/2021/06/17/130830.png" />
+
+                    </div>
+                </div>
+
+                <div class="home_bot_link m_home_bot_banquanlianxi">
+                    <div class="home_bot_linktitle">联系我们</div>
+                    <ul class="home_bot_banquanbox">
+                        <li>地址:北京市海淀区学院路29号</li>
+                        <li>邮编:100083</li>
+                        <li>技术支持:信息网络中心</li>
+                    </ul>
+                    <div class="home_bot_gongzhong_img">
+
+                        <img src="https://bm.cugb.edu.cn/kjc/upload/resources/image/2021/06/17/130830.png" />
+
+                    </div>
+                </div>
+                <div class="home_bot_link m_home_bot_banquanotherbox">
+                    <ul class="m_home_bot_banquanother">
+                        <li>© 版权所有:中国地质大学(北京)</li>
+                        <li>文保网安备案:1101080023</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+    </div>
+
+</body>
+<style>
+    .el-input {
+        width: 80px;
+    }
+
+    .charts {
+        height: 30px;
+        width: 30%;
+        background: #3385FB;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+<!-- import Vue before Element -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<!-- import JavaScript -->
+<script src="/webscience/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
+<!-- import axios cdn -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                tableData: [],
+                year: '',//单个年份
+                fundTypeCode: 0,//基金类型
+                yearArr: [
+                    { id: 2021, year: '2021' },
+                    { id: 2020, year: '2020' },
+                    { id: 2019, year: '2019' },
+                    { id: 2018, year: '2018' },
+                    { id: 2017, year: '2017' },
+                    { id: 2016, year: '2016' },
+                    { id: 2015, year: '2015' },
+                    { id: 2014, year: '2014' },
+                    { id: 2013, year: '2013' },
+                ],//年份
+                valueBegin: '2013',
+                valueEnd: '2021',
+                fund: {
+                    0: '全部基金',
+                    1: '青年基金',
+                    2: "其他基金",
+                    3: "人才基金",
+                    4: "重点基金",
+                    5: "面上基金",
+                },
+                json: {},
+                department: {
+                    '地科学院': 30100,
+                    '材料学院': 30300,
+                    '能源学院': 30600,
+                    '水环学院': 30500,
+                    '工程学院': 30200,
+                    '地信学院': 31000,
+                    '经管学院': 30700,
+                    '土科学院': 31200,
+                    '海洋学院': 31100,
+                    '数理学院': 31900,
+                    '信工学院': 30400,
+                    '科研院': 50100,
+                    '珠宝学院': 30900,
+                    '马克思学院': 31800,
+                    '继教学院': 31600,
+                    '教学单位': 30000,
+                    '外语学院': 30800
+                }
+            }
+        },
+        created() {
+            this.json = {
+                "flagCode": "fund",
+                "typeCode": 0,
+                "year": this.valueBegin + '~' + this.valueEnd
+            }
+            this.getPaperList()
+        },
+        watch: {
+            //监视年份点击变化
+            year(newV, oldV) {
+                if (newV) {
+                    this.json.year = newV
+                    this.json.typeCode = 0
+                    this.getPaperList()
+                }
+            },
+            // 监视基金类型变化
+            fundTypeCode(newV, oldV) {
+                if (newV || newV == 0) {
+                    this.json.typeCode = newV
+                    this.getPaperList()
+                }
+            }
+        },
+        methods: {
+            toPaperList(row) {
+                let dptCode = this.department[row.deptName]
+                let year = this.json.year
+                let typeCode = this.json.typeCode
+                let flagCode = this.json.flagCode
+                let url = `/webscience/kyxm/fundList.do?deptCode=${dptCode}&year=${year}&typeCode=${typeCode}&flagCode=${flagCode}`
+                window.location.href = url
+            },
+            // 查询列表数据
+            getPaperList() {
+            	//let url = 'http://39.103.222.205:8080/webscience/kjcQueryList.do'
+                let url = 'http://localhost:8080/webscience/kjcQueryList.do'
+                this.post(url, this.json)
+            },
+            post(url, param) {
+                const ajax = axios.create({
+                    timeout: 30000,
+                    // baseURL: process.env.api_url, // api的base_url
+                    withCredentials: false,
+                });
+                // ajax.interceptors.response.use(response => {
+                //     return response.data;
+                // })
+                return new Promise((resolve, reject) => {
+                    ajax({
+                        method: "post",
+                        url,
+                        data: param,
+                        headers: { "Content-Type": "application/json", 'Access-Control-Allow-Origin': '*' },
+                    }).then(res => {
+                        resolve(res);
+                        this.tableData = res.data.kjcQueryList
+                    });
+                });
+            },
+            //改变基金类型
+            changeFundType(code) {
+                this.fundTypeCode = code
+            },
+            //改变单个年份
+            changeYear(year) {
+                this.year = year
+                this.fundTypeCode = 0
+            },
+            //点击全部
+            clickAll(all) {
+                this.year = all
+                this.fundTypeCode = 0
+                this.json.year = this.valueBegin + '~' + this.valueEnd
+                this.json.typeCode = 2
+                this.getPaperList()
+            },
+        }
+    });
+</script>
+
+</html>
