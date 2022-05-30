@@ -227,11 +227,11 @@
                 , cols: [[ //表头
                     { field: 'id', title: '序号', width: 70, align: 'center', style: 'font-size:medium' }
                     , { field: 'name', title: '专利名称', width: 340, align: 'left', style: 'font-size:medium' }
-                    , { field: 'inventor', title: '第一发明人', width: 136, align: 'left', style: 'font-size:medium' }
-                    , { field: 'desc', title: '详细描述', width: 230, align: 'left', style: 'font-size:medium' }
-                    , { field: 'appliDate', title: '专利申请日', width: 150, align: 'left', style: 'font-size:medium' }
-                    , { field: 'openDate', title: '专利授权公开日', width: 150, align: 'center', style: 'font-size:medium' }
-                    , { field: 'pubNum', title: '专利号', width: 110, align: 'center', style: 'font-size:medium' }
+                    , { field: 'inventor', title: '第一发明人', width: 155, align: 'left', style: 'font-size:medium' }
+                    , { field: 'desc', title: '详细描述', width: 155, align: 'left', style: 'font-size:medium' }
+                    , { field: 'appliDate', title: '专利申请日', width: 160, align: 'left', style: 'font-size:medium' }
+                    , { field: 'openDate', title: '专利授权公开日', width: 155, align: 'left', style: 'font-size:medium' }
+                    , { field: 'pubNum', title: '专利号', width: 160, align: 'left', style: 'font-size:medium' }
                 ]]
                 , data: ${awardJson}
                 , done: function (res, curr, count) {
