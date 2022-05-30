@@ -168,12 +168,12 @@
 			                <div class="row layout-top-spacing" id="cancel-row">
 								<div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
 									 <div class="widget widget-one_hybrid widget-engagement" style="float:center;width:1000px;height:850px;">
-					                       	<div id="chartdiv" style="width: 72%; height: 850px; margin: 20px auto;">
-					                       		<input type="hidden" id="ws_a_cugb_k" value="${ws_a_cugb_k}">
-					                       		<input type="hidden" id="ws_a_cugb_SCI_v" value="${ws_a_cugb_SCI_v}">
-			                            		<input type="hidden" id="ws_a_cugb_SCI_project" value="年份">
-			                            		<input type="hidden" id="ws_a_cugb_SCI_unit" value="${ws_a_cugb_SCI_project}${ws_a_cugb_SCI_unit}">
-			                            	</div>
+                                        <div id="chartdiv" style="width: 72%; height: 850px; margin: 20px auto;">
+                                            <input type="hidden" id="ws_a_cugb_k" value="${ws_a_cugb_k}">
+                                            <input type="hidden" id="ws_a_cugb_SCI_v" value="${ws_a_cugb_SCI_v}">
+                                            <input type="hidden" id="ws_a_cugb_SCI_project" value="年份">
+                                            <input type="hidden" id="ws_a_cugb_SCI_unit" value="${ws_a_cugb_SCI_project}${ws_a_cugb_SCI_unit}">
+                                        </div>
 				                     </div>
 				                     <div class="widget widget-one_hybrid widget-engagement" style="float:center;width:1000px;height:850px;">
 					                       	<div id="chartdiv_A" style="width: 72%; height: 850px; margin: 20px auto;">
@@ -262,9 +262,7 @@
 	<!-- Chart code -->
     <script src="/webscience/ws/plugins/amcharts/amcharts-cugbPapers.js"></script>
 </body>
-<!-- import Vue before Element -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-<!-- import JavaScript -->
+<script src="/webscience/ws/cugb/js/vue.js"></script>
 <script src="/webscience/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
 <script>
     new Vue({
@@ -284,7 +282,7 @@
              // 十佳论文
              showCase3() {
                  window.location.href = '/webscience/xslw/sjlw.do';
-             },
+             }
         }
     });
 </script>

@@ -8,23 +8,22 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.webscience.json.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.webscience.json.ws_a_cugb;
-import com.webscience.json.ws_a_cugb_dept;
-import com.webscience.json.ws_a_cugb_dept_detail;
-import com.webscience.json.ws_award;
-import com.webscience.json.ws_files;
 import com.webscience.services.KjcService;
 import com.webscience.util.Config;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class KjcController {
@@ -321,7 +320,7 @@ public class KjcController {
 
 	@RequestMapping(value = "/kyxm/fund.do", method = { RequestMethod.POST, RequestMethod.GET })
 	public String kyxmFund(HttpServletRequest request) {
-		String toPage = "forward:/ws/kjc/kyxm/fund.html";
+		String toPage = "forward:/ws/kjc/kyxm/fundList.html";
 		return toPage;
 	}
 
@@ -361,9 +360,7 @@ public class KjcController {
 		return toPage;
 	}
 
-	@RequestMapping(value = { "/kjcQueryList.do" }, method = {
-			org.springframework.web.bind.annotation.RequestMethod.POST,
-			org.springframework.web.bind.annotation.RequestMethod.GET })
+	@RequestMapping(value = { "/kjcQueryList.do" }, method = {RequestMethod.POST, RequestMethod.GET })
 	public void kjcQueryList(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		request.setCharacterEncoding(charset);
 		response.setContentType("text/html;charset=" + charset);
@@ -378,8 +375,7 @@ public class KjcController {
 		response.getWriter().print(reJson.toString());
 	}
 
-	@RequestMapping(value = { "/kjcQuery.do" }, method = { org.springframework.web.bind.annotation.RequestMethod.POST,
-			org.springframework.web.bind.annotation.RequestMethod.GET })
+	@RequestMapping("/kjcQuery.do")
 	public void kjcQuery(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		request.setCharacterEncoding(charset);
 		response.setContentType("text/html;charset=" + charset);
@@ -423,5 +419,18 @@ public class KjcController {
 			i += readlen;
 		}
 		return buffer;
+	}
+
+	@RequestMapping(value = "/fmzl/zhzl.do", method = RequestMethod.GET)
+	public String fmzlYxdb(@RequestParam("patent") String patent, Model model) {
+		String toPage = "forward:/ws/kjc/fmzl/patentList.jsp";
+		List<Patent> list = kjcService.getPatentByCategory(patent);
+		ws_files file = kjcService.getCugbData().get(3);
+		JSONArray awardJson = JSONArray.fromObject(list);
+		model.addAttribute("awardJson", awardJson);
+		model.addAttribute("title", file.getName());
+		model.addAttribute("type", patent);
+		model.addAttribute("addTime", file.getAddTime());
+		return toPage;
 	}
 }

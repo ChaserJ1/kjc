@@ -7,14 +7,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import com.webscience.json.*;
 import org.springframework.stereotype.Service;
 
 import com.webscience.crawl.KjcUtils;
-import com.webscience.json.ws_a_cugb;
-import com.webscience.json.ws_a_cugb_dept;
-import com.webscience.json.ws_a_cugb_dept_detail;
-import com.webscience.json.ws_award;
-import com.webscience.json.ws_files;
 import com.webscience.util.Config;
 
 @Service
@@ -248,5 +244,32 @@ public class KjcService {
 			}
 		}
 		return ws_awardList;
+	}
+
+	public List<Patent> getPatentByCategory(String patent) {
+		String sql = "SELECT * FROM ws_a_cugb_trans where type = :type";
+		Query query = null;
+		query = this.em.createNativeQuery(sql);
+		query.setParameter("type", patent);
+		List resultList = query.getResultList();
+		List<Patent> patentList = new ArrayList<>();
+
+		if(resultList != null && resultList.size() > 0) {
+			for(int i = 0; i < resultList.size(); i ++) {
+				Object[] obj = (Object[]) resultList.get(i);
+				Patent p = new Patent();
+				p.setId(Integer.parseInt(obj[0].toString()));
+				p.setName(obj[1] == null ? "" : obj[1].toString());
+				p.setInventor(obj[2] == null ? "" : obj[2].toString());
+				p.setType(obj[3] == null ? "" : obj[3].toString());
+				p.setDesc(obj[4] == null ? "" : obj[4].toString());
+				p.setAppliDate(obj[5] == null ? "" : obj[5].toString());
+				p.setOpenDate(obj[6] == null ? "" : obj[6].toString());
+				p.setPubNum(obj[7] == null ? "" : obj[7].toString());
+				p.setAddTime(obj[8] == null ? "" : obj[8].toString());
+				patentList.add(p);
+			}
+		}
+		return patentList;
 	}
 }

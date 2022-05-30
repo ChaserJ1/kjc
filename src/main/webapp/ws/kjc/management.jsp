@@ -10,22 +10,16 @@
     <link rel="icon" type="image/x-icon" href="/webscience/ws/assets/img/favicon.ico"/>
     <link href="/webscience/ws/assets/css/loader.css" rel="stylesheet" type="text/css" />
     <script src="/webscience/ws/assets/js/loader.js"></script>
-
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="/webscience/ws/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/webscience/ws/assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="/webscience/ws/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
     <link href="/webscience/ws/assets/css/structure.css" rel="stylesheet" type="text/css" />
     <link href="/webscience/ws/plugins/highlight/styles/monokai-sublime.css" rel="stylesheet" type="text/css" />
-    <!-- END GLOBAL MANDATORY STYLES -->
-
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <link href="/webscience/ws/assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
     <link href="/webscience/ws/plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
     <link href="/webscience/ws/assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
     <link href="/webscience/ws/assets/css/components/custom-modal.css" rel="stylesheet" type="text/css" />
-    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 	<link rel="stylesheet" type="text/css" href="/webscience/ws/assets/css/button.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
@@ -43,29 +37,17 @@
 		    border-spacing: 0;
 		    font-size: 12px;
 		}
-
 	</style>
 </head>
 <body class="alt-menu sidebar-noneoverflow" style="overflow:auto">
-	
     <!-- BEGIN LOADER -->
     <div id="load_screen"> <div class="loader"> <div class="loader-content">
         <div class="spinner-grow align-self-center"></div>
     </div></div></div>
-    <!--  END LOADER -->	
-
-
-    <!--  BEGIN MAIN CONTAINER  -->
     <div class="main-container" id="container">
-
         <div class="overlay"></div>
         <div class="search-overlay"></div>
-
-        <!--  BEGIN TOPBAR  -->
         <div class="header-page"></div>
-        <!--  END TOPBAR  -->
-        
-        <!--  BEGIN CONTENT PART  -->
         <div id="content" class="main-content">
             <div class="layout-px-spacing">           
                 <div class="row layout-top-spacing" id="cancel-row">
@@ -83,10 +65,7 @@
                 </div>
             </div>
 		</div>
-        <!--  END CONTENT PART  -->
     </div>
-    <!-- END MAIN CONTAINER -->
-	
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="/webscience/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
     <script src="/webscience/ws/bootstrap/js/popper.min.js"></script>

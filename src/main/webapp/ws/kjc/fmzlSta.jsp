@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/hometop.css">
     <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/indexmb1.css">
     <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/list.css">
+    <link rel="stylesheet" type="text/css" href="/webscience/ws/bootstrap/css/bootstrap.css">
     <!-- Styles -->
 	<style>
 		#chartdiv {
@@ -144,6 +145,14 @@
                 <div class="detail_info"><label>发布时间：${addTime}</label></div>
                 <!-- 移动端-->
                 <div class="m_detail_info"><label>发布时间：${addTime}</label></div>
+                <div id="app">
+                    <div class="btn-wrap" style="text-align: center;margin-top: 10px;">
+                        <a href="/webscience/fmzl/zhzl.do?patent=转化专利" class="btn btn-info btn-sm">转化专利</a>
+                        <a href="/webscience/fmzl/zhzl.do?patent=发明专利" class="btn btn-info btn-sm">发明专利</a>
+                        <a href="/webscience/fmzl/zhzl.do?patent=实用新型" class="btn btn-info btn-sm">实用新型</a>
+                        <a href="/webscience/fmzl/zhzl.do?patent=外观设计" class="btn btn-info btn-sm">外观设计</a>
+                    </div>
+                </div>
             </div>
             <div class="detail_content_box">
                 <!--  BEGIN MAIN CONTAINER  -->
@@ -239,4 +248,26 @@
 	<!-- Chart code -->
     <script src="/webscience/ws/plugins/amcharts/amcharts-fmzlSta.js"></script>
 </body>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { visible: false }
+        },
+        methods: {
+            showCase1(patent) {
+                window.location.href = '/webscience/fmzl/zhzl.do?patent='+patent;
+            },
+            showCase2(patent) {
+                window.location.href = '/webscience/fmzl/fmzl.do?patent='+patent;
+            },
+            showCase3(patent) {
+                window.location.href = '/webscience/fmzl/syxx.do?patent='+patent;
+            },
+            showCase4(patent) {
+                window.location.href = '/webscience/fmzl/wgsj.do?patent='+patent;
+            }
+        }
+    });
+</script>
 </html>

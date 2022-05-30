@@ -12,25 +12,19 @@
     <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/hometop.css">
     <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/indexmb1.css">
     <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/list.css">
-    <!-- 引入样式 -->
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/lib-master/theme-chalk/index.css" />
+    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/layui/css/layui.css">
+    <!-- Styles -->
+	<style>
+		#chartdiv {
+		  width: 100%;
+		  height: 500px;
+		}
+	</style>
     <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script>
     <script src="/webscience/ws/cugb/js/idangerous.swiper.min.js"></script>
     <script src="/webscience/ws/cugb/js/scrollReveal.js" async></script>
     <script src="/webscience/ws/cugb/js/anime.min.js" async></script>
     <script src="/webscience/ws/cugb/js/paging.js"></script>
-    <!-- 引入amchart核心文件 -->
-    <script src="/webscience/ws/cugb/js/core.js"></script>
-    <script src="/webscience/ws/cugb/js/charts.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/animated.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/material.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/dataviz.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/amchartsdark.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/dark.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/frozen.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/kelly.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/moonrisekingdom.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/patterns.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
@@ -102,7 +96,7 @@
             getFontSize();
             document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobile.css">');
             document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobilelist.css">');
-            loadJS('/webscience/ws/cugb/js/mobilepclist.js');
+            loadJS('./js/mobilepclist.js');
         } else {
             $('html').css('font-size', '');
             document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/pcmedia.css">');
@@ -144,56 +138,25 @@
             </div>
         </div>
         <!-- 内容详情区 -->
-        <div class="detail_box" id='list_detail_box' style="padding-top:120px">
+        <div class="detail_box" id='list_detail_box' style="padding-top:120px;padding-bottom:30px">
             <div class="detail_title_box">
                 <div class="detail_title">${title}</div>
                 <!-- pc端 -->
                 <div class="detail_info"><label>发布时间：${addTime}</label></div>
                 <!-- 移动端-->
                 <div class="m_detail_info"><label>发布时间：${addTime}</label></div>
-            	<div id="app">
-                    <div class="btn-wrap" style="text-align: center;margin-top: 10px;">
-                        <el-button @click="showCase1" type="primary" size="mini">总体情况</el-button>
-                        <el-button @click="showCase2" type="primary" size="mini">院系对比</el-button>
-                        <el-button @click="showCase3" type="primary" size="mini">“973”项目</el-button>
-                    </div>
-                </div>
             </div>
-            <div class="detail_content_box">
+            <div class="detail_content_box" style="padding-left:0;padding-top:0;padding-bottom:0">
                 <!--  BEGIN MAIN CONTAINER  -->
-			    <div class="main-container" id="container">
-			        <!--  BEGIN CONTENT PART  -->
-			        <div id="content" class="main-content">
-			            <div class="layout-px-spacing">
-			                <div class="row layout-top-spacing" id="cancel-row">
-								<div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
-									 <div class="widget widget-one_hybrid widget-engagement" style="float:center;width:1000px;height:720px;">
-					                       	<div id="chartdiv" style="width: 72%; height: 720px; margin: 20px auto;">
-					                       		<input type="hidden" id="ws_a_cugb_k" value="${ws_a_cugb_k}">
-					                       		<input type="hidden" id="ws_a_cugb_NDZ_v" value="${ws_a_cugb_NDZ_v}">
-			                            		<input type="hidden" id="ws_a_cugb_NDZ_project" value="年份">
-			                            		<input type="hidden" id="ws_a_cugb_NDZ_unit" value="${ws_a_cugb_NDZ_project}${ws_a_cugb_NDZ_unit}">
-			                            	</div>
-				                     </div>
-				                     <div class="widget widget-one_hybrid widget-engagement" style="float:center;width:1000px;height:720px;">
-					                       	<div id="chartdiv_A" style="width: 72%; height: 720px; margin: 20px auto;">
-					                       		<input type="hidden" id="ws_a_cugb_ZRK_v" value="${ws_a_cugb_ZRK_v}">
-			                            		<input type="hidden" id="ws_a_cugb_ZRK_project" value="年份">
-			                            		<input type="hidden" id="ws_a_cugb_ZRK_unit" value="${ws_a_cugb_ZRK_project}${ws_a_cugb_ZRK_unit}">
-					                       	</div>
-				                     </div>
-			                 	</div>
-			           	 	</div>
-			        	</div>
-			    	</div>
-			        <!--  END CONTENT PART  -->
-			    </div>
+			    <div class="detail_content_box" style="padding-left:0;padding-top:0;padding-bottom:0">
+               	 	<table id="demo" lay-filter="test" style="padding-left:0;padding-top:0;padding-bottom:0"></table>
+            	</div>
 			    <!-- END MAIN CONTAINER -->
             </div>
         </div>
 
         <!-- 底部 PC -->
-        <div class="home_bottom" style="margin-top:-60px;">
+        <div class="home_bottom">
             <div class="home_bot_box">
                 <div class="home_bot_link home_bot_banquan">
                     <div class="home_bot_linktitle">版权信息</div>
@@ -246,35 +209,36 @@
     </div>
 	<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="/webscience/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
-	<!-- Resources -->
-	<script src="/webscience/ws/cugb/js/core.js"></script>
-	<script src="/webscience/ws/cugb/js/charts.js"></script>
-	<script src="/webscience/ws/cugb/js/animated.js"></script>
-	<!-- Chart code -->
-    <script src="/webscience/ws/cugb/js/amcharts-cugbFunds.js"></script>
+    <script src="/webscience/ws/cugb/layui/layui.js"></script>
+    <script>
+        layui.use('table', function () {
+            var table = layui.table;
+            table.render({
+                elem: '#demo'
+                , height: 620
+                , width: 1200
+                // , url: '/demo/table/user/' //数据接口
+                , page: true //开启分页
+                // , cellMinWidth: 80
+                , limit: 10
+                , skin: 'line' //行边框风格
+                , even: true //开启隔行背景
+                , size: 'lg' //小尺寸的表格
+                , cols: [[ //表头
+                    { field: 'id', title: '序号', width: 70, align: 'center', style: 'font-size:medium' }
+                    , { field: 'name', title: '专利名称', width: 340, align: 'left', style: 'font-size:medium' }
+                    , { field: 'inventor', title: '第一发明人', width: 136, align: 'left', style: 'font-size:medium' }
+                    , { field: 'desc', title: '详细描述', width: 230, align: 'left', style: 'font-size:medium' }
+                    , { field: 'appliDate', title: '专利申请日', width: 150, align: 'left', style: 'font-size:medium' }
+                    , { field: 'openDate', title: '专利授权公开日', width: 150, align: 'center', style: 'font-size:medium' }
+                    , { field: 'pubNum', title: '专利号', width: 110, align: 'center', style: 'font-size:medium' }
+                ]]
+                , data: ${awardJson}
+                , done: function (res, curr, count) {
+                    $('th').css({ 'font-weight': 'bold', 'color': '#000','font-size': 'medium'});
+                }
+            });
+        });
+    </script>
 </body>
-<script src="/webscience/ws/cugb/js/vue.js"></script>
-<script src="/webscience/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    new Vue({
-        el: '#app',
-        data: function () {
-            return { visible: false }
-        },
-        methods: {
-            // 总体情况
-            showCase1() {
-                window.location.href = '/webscience/cugbFunds.do';
-            },
-            // 院系对比
-            showCase2() {
-                window.location.href = '/webscience/kyxm/yxdb.do';
-            },
-            // ‘973’项目
-            showCase3() {
-                window.location.href = '/webscience/kyxm/nstProject.do';
-            },
-        }
-    });
-</script>
 </html>

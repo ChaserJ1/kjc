@@ -27,18 +27,17 @@
     <script src="/webscience/ws/cugb/js/themes/animated.js"></script>
     <script src="/webscience/ws/cugb/js/themes/material.js"></script>
     <script src="/webscience/ws/cugb/js/themes/dataviz.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/amchartsdark.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/dark.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/frozen.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/kelly.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/moonrisekingdom.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/patterns.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/amchartsdark.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/dark.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/frozen.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/kelly.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/moonrisekingdom.js"></script>
+    <script src="/webscience/ws/cugb/js/themes/patterns.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
             var fn = callback || function () { };
             script.type = 'text/javascript';
-
             if (script.readyState) { //IE
                 script.onreadystatechange = function () {
                     if (script.readyState == 'loaded' || script.readyState == 'complete') {
@@ -258,9 +257,7 @@
                         </ul>
                     </div>
                     <div class="home_bot_gongzhong_img">
-
                         <img src="https://bm.cugb.edu.cn/kjc/upload/resources/image/2021/06/17/130830.png" />
-
                     </div>
                 </div>
 
@@ -272,9 +269,7 @@
                         <li>技术支持:信息网络中心</li>
                     </ul>
                     <div class="home_bot_gongzhong_img">
-
                         <img src="https://bm.cugb.edu.cn/kjc/upload/resources/image/2021/06/17/130830.png" />
-
                     </div>
                 </div>
                 <div class="home_bot_link m_home_bot_banquanotherbox">
@@ -293,20 +288,15 @@
     .el-input {
         width: 80px;
     }
-
     .charts {
         height: 30px;
         width: 30%;
         background: #3385FB;
     }
 </style>
-
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
-<!-- import Vue before Element -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-<!-- import JavaScript -->
+<script src="/webscience/ws/cugb/js/echarts.min.js"></script>
+<script src="/webscience/ws/cugb/js/vue.js"></script>
 <script src="/webscience/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
-<!-- import axios cdn -->
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
     new Vue({
@@ -325,7 +315,7 @@
                     { id: 2016, year: '2016' },
                     { id: 2015, year: '2015' },
                     { id: 2014, year: '2014' },
-                    { id: 2013, year: '2013' },
+                    { id: 2013, year: '2013' }
                 ],//年份
                 valueBegin: '2013',
                 valueEnd: '2021',
@@ -335,7 +325,7 @@
                     2: "其他基金",
                     3: "人才基金",
                     4: "重点基金",
-                    5: "面上基金",
+                    5: "面上基金"
                 },
                 json: {},
                 department: {
@@ -403,7 +393,7 @@
                 const ajax = axios.create({
                     timeout: 30000,
                     // baseURL: process.env.api_url, // api的base_url
-                    withCredentials: false,
+                    withCredentials: false
                 });
                 // ajax.interceptors.response.use(response => {
                 //     return response.data;
@@ -413,7 +403,7 @@
                         method: "post",
                         url,
                         data: param,
-                        headers: { "Content-Type": "application/json", 'Access-Control-Allow-Origin': '*' },
+                        headers: { "Content-Type": "application/json", 'Access-Control-Allow-Origin':'*'},
                     }).then(res => {
                         resolve(res);
                         this.tableData = res.data.kjcQueryList
@@ -436,9 +426,8 @@
                 this.json.year = this.valueBegin + '~' + this.valueEnd
                 this.json.typeCode = 2
                 this.getPaperList()
-            },
+            }
         }
     });
 </script>
-
 </html>
