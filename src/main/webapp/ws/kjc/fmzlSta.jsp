@@ -7,24 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>科技处</title>
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/swiper.min.css">
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/idangerous.swiper.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/hometop.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/indexmb1.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/list.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/bootstrap/css/bootstrap.css">
-    <!-- Styles -->
-	<style>
-		#chartdiv {
-		  width: 100%;
-		  height: 500px;
-		}
-	</style>
-    <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script>
-    <script src="/webscience/ws/cugb/js/idangerous.swiper.min.js"></script>
-    <script src="/webscience/ws/cugb/js/scrollReveal.js" async></script>
-    <script src="/webscience/ws/cugb/js/anime.min.js" async></script>
-    <script src="/webscience/ws/cugb/js/paging.js"></script>
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/hometop.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/indexmb1.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/list.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/lib-master/theme-chalk/index.css" />
+    <script src="/kjcManager/ws/cugb/js/jquery-1.12.4.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/paging.js"></script>
+    <!-- 引入amchart核心文件 -->
+    <script src="/kjcManager/ws/cugb/js/core.js"></script>
+    <script src="/kjcManager/ws/cugb/js/charts.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/animated.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/material.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/dataviz.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/amchartsdark.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/dark.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/frozen.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/kelly.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/moonrisekingdom.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/patterns.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
@@ -94,17 +100,17 @@
         if (deviceProbing()) {
             page_border_height = '0.03rem';
             getFontSize();
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobile.css">');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobilelist.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobile.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobilelist.css">');
             loadJS('./js/mobilepclist.js');
         } else {
             $('html').css('font-size', '');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/pcmedia.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/pcmedia.css">');
             if (IEVersion()) {
                 // document.write('<link rel="stylesheet" type="text/css" href="/kjc/css/pcIe.css">');
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             } else {
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             }
         }
     </script>
@@ -146,11 +152,19 @@
                 <!-- 移动端-->
                 <div class="m_detail_info"><label>发布时间：${addTime}</label></div>
                 <div id="app">
+                <!--  
                     <div class="btn-wrap" style="text-align: center;margin-top: 10px;">
-                        <a href="/webscience/fmzl/zhzl.do?patent=转化专利" class="btn btn-info btn-sm">转化专利</a>
-                        <a href="/webscience/fmzl/zhzl.do?patent=发明专利" class="btn btn-info btn-sm">发明专利</a>
-                        <a href="/webscience/fmzl/zhzl.do?patent=实用新型" class="btn btn-info btn-sm">实用新型</a>
-                        <a href="/webscience/fmzl/zhzl.do?patent=外观设计" class="btn btn-info btn-sm">外观设计</a>
+                        <a href="/kjcManager/fmzl/zhzl.do?patent=转化专利" class="btn btn-info btn-sm">转化专利</a>
+                        <a href="/kjcManager/fmzl/zhzl.do?patent=发明专利" class="btn btn-info btn-sm">发明专利</a>
+                        <a href="/kjcManager/fmzl/zhzl.do?patent=实用新型" class="btn btn-info btn-sm">实用新型</a>
+                        <a href="/kjcManager/fmzl/zhzl.do?patent=外观设计" class="btn btn-info btn-sm">外观设计</a>
+                    </div>
+                -->
+                    <div class="btn-wrap" style="text-align: center;margin-top: 10px;">
+                        <el-button @click="showCase1()" type="primary" size="mini">转化专利</el-button>
+                        <el-button @click="showCase2()" type="primary" size="mini">发明专利</el-button>
+                        <el-button @click="showCase3()" type="primary" size="mini">实用新型</el-button>
+                        <el-button @click="showCase4()" type="primary" size="mini">外观设计</el-button>
                     </div>
                 </div>
             </div>
@@ -240,14 +254,19 @@
         <!-- 底部结束 -->
     </div>
 	<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="/webscience/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="/kjcManager/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
 	<!-- Resources -->
-	<script src="/webscience/ws/plugins/amcharts/core.js"></script>
-	<script src="/webscience/ws/plugins/amcharts/charts.js"></script>
-	<script src="/webscience/ws/plugins/amcharts/animated.js"></script>
+	<script src="/kjcManager/ws/plugins/amcharts/core.js"></script>
+	<script src="/kjcManager/ws/plugins/amcharts/charts.js"></script>
+	<script src="/kjcManager/ws/plugins/amcharts/animated.js"></script>
 	<!-- Chart code -->
-    <script src="/webscience/ws/plugins/amcharts/amcharts-fmzlSta.js"></script>
+    <script src="/kjcManager/ws/plugins/amcharts/amcharts-fmzlSta.js"></script>
 </body>
+<script src="/kjcManager/ws/cugb/js/echarts.js"></script>
+<!-- import Vue before Element -->
+<script src="/kjcManager/ws/cugb/js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="/kjcManager/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
 <script>
     new Vue({
         el: '#app',
@@ -255,17 +274,17 @@
             return { visible: false }
         },
         methods: {
-            showCase1(patent) {
-                window.location.href = '/webscience/fmzl/zhzl.do?patent='+patent;
+            showCase1() {
+                window.location.href = '/kjcManager/fmzl/zhzl.do?patent=转化专利';
             },
-            showCase2(patent) {
-                window.location.href = '/webscience/fmzl/fmzl.do?patent='+patent;
+            showCase2() {
+                window.location.href = '/kjcManager/fmzl/zhzl.do?patent=发明专利';
             },
-            showCase3(patent) {
-                window.location.href = '/webscience/fmzl/syxx.do?patent='+patent;
+            showCase3() {
+                window.location.href = '/kjcManager/fmzl/zhzl.do?patent=实用新型';
             },
-            showCase4(patent) {
-                window.location.href = '/webscience/fmzl/wgsj.do?patent='+patent;
+            showCase4() {
+                window.location.href = '/kjcManager/fmzl/zhzl.do?patent=外观设计';
             }
         }
     });

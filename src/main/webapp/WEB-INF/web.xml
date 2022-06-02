@@ -39,7 +39,7 @@
 		</description>
 		<display-name>LoginFilter</display-name>
 		<filter-name>LoginFilter</filter-name>
-		<filter-class>com.webscience.tools.LoginFilter</filter-class>
+		<filter-class>com.kjcManager.tools.LoginFilter</filter-class>
 	</filter>
 
 	<filter-mapping>

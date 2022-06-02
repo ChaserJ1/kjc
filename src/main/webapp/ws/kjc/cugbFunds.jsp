@@ -7,30 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>科技处</title>
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/swiper.min.css">
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/idangerous.swiper.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/hometop.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/indexmb1.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/list.css">
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/hometop.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/indexmb1.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/list.css">
     <!-- 引入样式 -->
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/lib-master/theme-chalk/index.css" />
-    <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script>
-    <script src="/webscience/ws/cugb/js/idangerous.swiper.min.js"></script>
-    <script src="/webscience/ws/cugb/js/scrollReveal.js" async></script>
-    <script src="/webscience/ws/cugb/js/anime.min.js" async></script>
-    <script src="/webscience/ws/cugb/js/paging.js"></script>
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/lib-master/theme-chalk/index.css" />
+    <script src="/kjcManager/ws/cugb/js/jquery-1.12.4.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/paging.js"></script>
     <!-- 引入amchart核心文件 -->
-    <script src="/webscience/ws/cugb/js/core.js"></script>
-    <script src="/webscience/ws/cugb/js/charts.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/animated.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/material.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/dataviz.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/amchartsdark.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/dark.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/frozen.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/kelly.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/moonrisekingdom.js"></script>
-    <script src="/webscience/ws/cugb/js//themes/patterns.js"></script>
+    <script src="/kjcManager/ws/cugb/js/core.js"></script>
+    <script src="/kjcManager/ws/cugb/js/charts.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/animated.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/material.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/dataviz.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/amchartsdark.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/dark.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/frozen.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/kelly.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/moonrisekingdom.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/patterns.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
@@ -100,17 +100,17 @@
         if (deviceProbing()) {
             page_border_height = '0.03rem';
             getFontSize();
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobile.css">');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobilelist.css">');
-            loadJS('/webscience/ws/cugb/js/mobilepclist.js');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobile.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobilelist.css">');
+            loadJS('/kjcManager/ws/cugb/js/mobilepclist.js');
         } else {
             $('html').css('font-size', '');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/pcmedia.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/pcmedia.css">');
             if (IEVersion()) {
                 // document.write('<link rel="stylesheet" type="text/css" href="/kjc/css/pcIe.css">');
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             } else {
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             }
         }
     </script>
@@ -245,16 +245,19 @@
         <!-- 底部结束 -->
     </div>
 	<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="/webscience/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="/kjcManager/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
 	<!-- Resources -->
-	<script src="/webscience/ws/cugb/js/core.js"></script>
-	<script src="/webscience/ws/cugb/js/charts.js"></script>
-	<script src="/webscience/ws/cugb/js/animated.js"></script>
+	<script src="/kjcManager/ws/cugb/js/core.js"></script>
+	<script src="/kjcManager/ws/cugb/js/charts.js"></script>
+	<script src="/kjcManager/ws/cugb/js/animated.js"></script>
 	<!-- Chart code -->
-    <script src="/webscience/ws/cugb/js/amcharts-cugbFunds.js"></script>
+    <script src="/kjcManager/ws/cugb/js/amcharts-cugbFunds.js"></script>
 </body>
-<script src="/webscience/ws/cugb/js/vue.js"></script>
-<script src="/webscience/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="/kjcManager/ws/cugb/js/echarts.js"></script>
+<!-- import Vue before Element -->
+<script src="/kjcManager/ws/cugb/js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="/kjcManager/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
 <script>
     new Vue({
         el: '#app',
@@ -264,15 +267,15 @@
         methods: {
             // 总体情况
             showCase1() {
-                window.location.href = '/webscience/cugbFunds.do';
+                window.location.href = '/kjcManager/cugbFunds.do';
             },
             // 院系对比
             showCase2() {
-                window.location.href = '/webscience/kyxm/yxdb.do';
+                window.location.href = '/kjcManager/kyxm/yxdb.do';
             },
             // ‘973’项目
             showCase3() {
-                window.location.href = '/webscience/kyxm/nstProject.do';
+                window.location.href = '/kjcManager/kyxm/nstProject.do';
             },
         }
     });

@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>科技处</title>
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/swiper.min.css">
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/idangerous.swiper.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/hometop.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/indexmb1.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/list.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/layui/css/layui.css">
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/hometop.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/indexmb1.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/list.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/layui/css/layui.css">
     <!-- Styles -->
 	<style>
 		#chartdiv {
@@ -20,11 +20,11 @@
 		  height: 500px;
 		}
 	</style>
-    <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script>
-    <script src="/webscience/ws/cugb/js/idangerous.swiper.min.js"></script>
-    <script src="/webscience/ws/cugb/js/scrollReveal.js" async></script>
-    <script src="/webscience/ws/cugb/js/anime.min.js" async></script>
-    <script src="/webscience/ws/cugb/js/paging.js"></script>
+    <script src="/kjcManager/ws/cugb/js/jquery-1.12.4.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/paging.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
@@ -94,17 +94,17 @@
         if (deviceProbing()) {
             page_border_height = '0.03rem';
             getFontSize();
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobile.css">');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobilelist.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobile.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobilelist.css">');
             loadJS('./js/mobilepclist.js');
         } else {
             $('html').css('font-size', '');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/pcmedia.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/pcmedia.css">');
             if (IEVersion()) {
                 // document.write('<link rel="stylesheet" type="text/css" href="/kjc/css/pcIe.css">');
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             } else {
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             }
         }
     </script>
@@ -208,8 +208,8 @@
         <!-- 底部结束 -->
     </div>
 	<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="/webscience/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
-    <script src="/webscience/ws/cugb/layui/layui.js"></script>
+    <script src="/kjcManager/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="/kjcManager/ws/cugb/layui/layui.js"></script>
     <script>
         layui.use('table', function () {
             var table = layui.table;

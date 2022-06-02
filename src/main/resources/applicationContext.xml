@@ -15,10 +15,10 @@
 	<description>Spring公共配置</description>
 	<!-- 用于持有ApplicationContext,可以使用SpringContextHolder.getBean('xxxx')的静态方法得到spring 
 		bean对象 -->
-	<bean class="com.webscience.util.SpringContextHolder" lazy-init="false" />
+	<bean class="com.kjcManager.util.SpringContextHolder" lazy-init="false" />
 	<!--  <context:property-placeholder ignore-unresolvable="true" location="classpath:jdbc.properties" 		/>  -->
 	 
-	<bean id="propertyConfigurer" 	class="com.webscience.tools.EncryptablePropertyPlaceholderConfigurer" >
+	<bean id="propertyConfigurer" 	class="com.kjcManager.tools.EncryptablePropertyPlaceholderConfigurer" >
 		<property name="locations">
 			<list>
 				<value>classpath:jdbc.properties</value>
@@ -51,7 +51,7 @@
 		class="org.springframework.web.servlet.i18n.CookieLocaleResolver" />
 
 	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
-	<context:component-scan base-package="com.webscience">
+	<context:component-scan base-package="com.kjcManager">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" /><!-- 在spring-mvc.xml中配置了 -->
 	</context:component-scan>
@@ -69,7 +69,7 @@
 		  </bean>
 		</property>
 
-		<property name="packagesToScan" value="com.webscience.entities" />
+		<property name="packagesToScan" value="com.kjcManager.entities" />
 		<property name="jpaProperties">
 			<props>
 				<!-- 命名规则 My_NAME->MyName -->
@@ -86,7 +86,7 @@
 	</bean>
 
 	<!-- Spring Data Jpa配置 -->
-	<jpa:repositories base-package="com.webscience.repositories"
+	<jpa:repositories base-package="com.kjcManager.repositories"
 		transaction-manager-ref="transactionManager"
 		entity-manager-factory-ref="entityManagerFactory" />
 
@@ -132,6 +132,6 @@
 		</property>
 	</bean>
 	<!-- 错误统一处理 -->
-	<bean id="exceptionHandler" class="com.webscience.util.MyExceptionHandler" />
+	<bean id="exceptionHandler" class="com.kjcManager.util.MyExceptionHandler" />
 
 </beans>

@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>科技处</title>
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/swiper.min.css">
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/idangerous.swiper.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/hometop.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/indexmb1.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/list.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/layui/css/layui.css">
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/hometop.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/indexmb1.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/list.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/layui/css/layui.css">
     <!-- Styles -->
 	<style>
 		#chartdiv {
@@ -20,11 +20,11 @@
 		  height: 500px;
 		}
 	</style>
-    <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script>
-    <script src="/webscience/ws/cugb/js/idangerous.swiper.min.js"></script>
-    <script src="/webscience/ws/cugb/js/scrollReveal.js" async></script>
-    <script src="/webscience/ws/cugb/js/anime.min.js" async></script>
-    <script src="/webscience/ws/cugb/js/paging.js"></script>
+    <script src="/kjcManager/ws/cugb/js/jquery-1.12.4.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/paging.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
@@ -94,22 +94,26 @@
         if (deviceProbing()) {
             page_border_height = '0.03rem';
             getFontSize();
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobile.css">');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobilelist.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobile.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobilelist.css">');
             loadJS('./js/mobilepclist.js');
         } else {
             $('html').css('font-size', '');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/pcmedia.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/pcmedia.css">');
             if (IEVersion()) {
                 // document.write('<link rel="stylesheet" type="text/css" href="/kjc/css/pcIe.css">');
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             } else {
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             }
         }
     </script>
 </head>
 <body>
+	<%
+		String type = (String)request.getAttribute("type");
+	%>
+	<input type="hidden" id="type" value="<%=type%>">
 	 <!-- header logo -->
     <div class="home_headerbox">
         <div class="home_nav" id='homehead'>
@@ -135,6 +139,11 @@
             </div>
             <div class="list_banner_botbox">
                 <div class="list_title">${type}</div>
+                <div class="list_back"><a href="javascript:void(0)" onclick="history.go(-1);">
+                        <img src="https://bm.cugb.edu.cn/kjc/images/list/jiantou_icon.png" />
+                        <label>返回</label>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- 内容详情区 -->
@@ -208,36 +217,74 @@
         <!-- 底部结束 -->
     </div>
 	<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="/webscience/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
-    <script src="/webscience/ws/cugb/layui/layui.js"></script>
+    <script src="/kjcManager/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="/kjcManager/ws/cugb/layui/layui.js"></script>
     <script>
         layui.use('table', function () {
+			var type = document.getElementById("type").value;
+			console.log(type);
+			var name = '专利名称';
+			var openDate = '授权日';
+			var desc = '详细描述';
+            if(type == '转化专利'){
+	            name = '成果名称';
+	            openDate = '转化时间';
+	            desc = '转化方式';
+            }else if(type == '发明专利'){
+            	name = '专利名称';
+            }else if(type == '实用新型'){
+            	name = '实用新型名称';
+            }else if(type == '外观设计'){
+            	name = '外观设计名称';
+            }
             var table = layui.table;
-            table.render({
-                elem: '#demo'
-                , height: 620
-                , width: 1200
-                // , url: '/demo/table/user/' //数据接口
-                , page: true //开启分页
-                // , cellMinWidth: 80
-                , limit: 10
-                , skin: 'line' //行边框风格
-                , even: true //开启隔行背景
-                , size: 'lg' //小尺寸的表格
-                , cols: [[ //表头
-                    { field: 'id', title: '序号', width: 70, align: 'center', style: 'font-size:medium' }
-                    , { field: 'name', title: '专利名称', width: 340, align: 'left', style: 'font-size:medium' }
-                    , { field: 'inventor', title: '第一发明人', width: 155, align: 'left', style: 'font-size:medium' }
-                    , { field: 'desc', title: '详细描述', width: 155, align: 'left', style: 'font-size:medium' }
-                    , { field: 'appliDate', title: '专利申请日', width: 160, align: 'left', style: 'font-size:medium' }
-                    , { field: 'openDate', title: '专利授权公开日', width: 155, align: 'left', style: 'font-size:medium' }
-                    , { field: 'pubNum', title: '专利号', width: 160, align: 'left', style: 'font-size:medium' }
-                ]]
-                , data: ${awardJson}
-                , done: function (res, curr, count) {
-                    $('th').css({ 'font-weight': 'bold', 'color': '#000','font-size': 'medium'});
-                }
-            });
+            if (type == '转化专利'){
+	            table.render({
+	                elem: '#demo'
+	                , height: 620
+	                , width: 1200
+	                // , url: '/demo/table/user/' //数据接口
+	                , page: true //开启分页
+	                // , cellMinWidth: 80
+	                , limit: 10
+	                , skin: 'line' //行边框风格
+	                , even: true //开启隔行背景
+	                , size: 'lg' //小尺寸的表格
+	                , cols: [[ //表头
+	                    { field: 'id', title: '序号', width: 140, align: 'center', style: 'font-size:medium' }
+	                    , { field: 'name', title: name, width: 625, align: 'left', style: 'font-size:medium' }
+	                    , { field: 'desc', title: desc, width: 215, align: 'left', style: 'font-size:medium' }
+	                    , { field: 'openDate', title: openDate, width: 215, align: 'left', style: 'font-size:medium' }
+	                   // , { field: 'inventor', title: '第一发明人', width: 155, align: 'left', style: 'font-size:medium' }
+	                   // , { field: 'appliDate', title: '专利申请日', width: 160, align: 'left', style: 'font-size:medium' }
+	                   // , { field: 'pubNum', title: '专利号', width: 160, align: 'left', style: 'font-size:medium' }
+	                ]]
+	                , data: ${awardJson}
+	                , done: function (res, curr, count) {
+	                    $('th').css({ 'font-weight': 'bold', 'color': '#000','font-size': 'medium'});
+	                }
+	            });
+	         } else{
+	         	 table.render({
+	                elem: '#demo'
+	                , height: 620
+	                , width: 1200
+	                , page: true //开启分页
+	                , limit: 10
+	                , skin: 'line' //行边框风格
+	                , even: true //开启隔行背景
+	                , size: 'lg' //小尺寸的表格
+	                , cols: [[ //表头
+	                    { field: 'id', title: '序号', width: 240, align: 'center', style: 'font-size:medium' }
+	                    , { field: 'name', title: name, width: 715, align: 'left', style: 'font-size:medium' }
+	                    , { field: 'openDate', title: openDate, width: 240, align: 'left', style: 'font-size:medium' }
+	                ]]
+	                , data: ${awardJson}
+	                , done: function (res, curr, count) {
+	                    $('th').css({ 'font-weight': 'bold', 'color': '#000','font-size': 'medium'});
+	                }
+	            });
+	         }
         });
     </script>
 </body>

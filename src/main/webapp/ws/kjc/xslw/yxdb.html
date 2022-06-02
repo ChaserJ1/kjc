@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,31 @@
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>科技处</title>
     <!-- <link rel="stylesheet" href="css/index.css"> -->
-    <!-- <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script> -->
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/swiper.min.css">
-    <link rel="stylesheet" href="/webscience/ws/cugb/css/idangerous.swiper.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/hometop.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/indexmb1.css">
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/list.css">
+    <!-- <script src="/kjcManager/ws/cugb/js/jquery-1.12.4.min.js"></script> -->
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
+    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/hometop.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/indexmb1.css">
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/list.css">
     <!-- 引入样式 -->
-    <link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/lib-master/theme-chalk/index.css" />
-    <script src="/webscience/ws/cugb/js/jquery-1.12.4.min.js"></script>
-    <script src="/webscience/ws/cugb/js/idangerous.swiper.min.js"></script>
-    <script src="/webscience/ws/cugb/js/scrollReveal.js" async></script>
-    <script src="/webscience/ws/cugb/js/anime.min.js" async></script>
-    <script src="/webscience/ws/cugb/js/paging.js"></script>
+    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/lib-master/theme-chalk/index.css" />
+    <script src="/kjcManager/ws/cugb/js/jquery-1.12.4.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
+    <script src="/kjcManager/ws/cugb/js/paging.js"></script>
     <!-- 引入amchart核心文件 -->
-    <script src="/webscience/ws/cugb/js/core.js"></script>
-    <script src="/webscience/ws/cugb/js/charts.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/animated.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/material.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/dataviz.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/amchartsdark.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/dark.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/frozen.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/kelly.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/moonrisekingdom.js"></script>
-    <script src="/webscience/ws/cugb/js/themes/patterns.js"></script>
+    <script src="/kjcManager/ws/cugb/js/core.js"></script>
+    <script src="/kjcManager/ws/cugb/js/charts.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/animated.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/material.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/dataviz.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/amchartsdark.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/dark.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/frozen.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/kelly.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/moonrisekingdom.js"></script>
+    <script src="/kjcManager/ws/cugb/js/themes/patterns.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
@@ -101,21 +102,23 @@
         if (deviceProbing()) {
             page_border_height = '0.03rem';
             getFontSize();
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobile.css">');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/mobilelist.css">');
-            loadJS('/webscience/ws/cugb/js/mobilepclist.js');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobile.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/mobilelist.css">');
+            loadJS('/kjcManager/ws/cugb/js/mobilepclist.js');
         } else {
             $('html').css('font-size', '');
-            document.write('<link rel="stylesheet" type="text/css" href="/webscience/ws/cugb/css/pcmedia.css">');
+            document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/pcmedia.css">');
             if (IEVersion()) {
                 // document.write('<link rel="stylesheet" type="text/css" href="/kjc/css/pcIe.css">');
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             } else {
-                loadJS('/webscience/ws/cugb/js/pclist.js');
+                loadJS('/kjcManager/ws/cugb/js/pclist.js');
             }
         }
     </script>
+
 </head>
+
 <body>
     <!-- header logo -->
     <div class="home_headerbox">
@@ -286,8 +289,6 @@
         </div>
         <!-- 底部结束 -->
     </div>
-
-</body>
 <style>
     .charts {
         height: 30px;
@@ -295,10 +296,13 @@
         background: #dd562e;
     }
 </style>
-<script src="/webscience/ws/cugb/js/echarts.min.js"></script>
-<script src="/webscience/ws/cugb/js/vue.js"></script>
-<script src="/webscience/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/kjcManager/ws/cugb/js/echarts.js"></script>
+<!-- import Vue before Element -->
+<script src="/kjcManager/ws/cugb/js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="/kjcManager/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
+<!-- import axios cdn -->
+<script src="/kjcManager/ws/cugb/js/axios.min.js"></script>
 <script>
     new Vue({
         el: '#app',
@@ -377,8 +381,8 @@
         methods: {
             // 查询列表数据
             getPaperList() {
-            	//let url = 'http://39.103.222.205:8080/webscience/kjcQueryList.do'
-                let url = 'http://localhost:8080/webscience/kjcQueryList.do'
+            	let url = 'http://39.103.222.205:8080/kjcManager/kjcQueryList.do'
+                // let url = 'http://localhost:8080/kjcManager/kjcQueryList.do'
                 this.post(url, this.json)
             },
             post(url, param) {
@@ -409,7 +413,7 @@
                 let year = this.json.year
                 let typeCode = this.json.typeCode
                 let flagCode = this.json.flagCode
-                let url = `/webscience/xslw/paperList.do?deptCode=${dptCode}&year=${year}&typeCode=${typeCode}&flagCode=${flagCode}`
+                let url = `/kjcManager/xslw/paperList.do?deptCode=${dptCode}&year=${year}&typeCode=${typeCode}&flagCode=${flagCode}`
                 window.location.href = url
             },
             //点击不同类型论文
@@ -432,5 +436,5 @@
         }
     });
 </script>
-
+</body>
 </html>
