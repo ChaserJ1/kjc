@@ -1,6 +1,7 @@
 package com.kjcManager.controller;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -8,22 +9,20 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.alibaba.fastjson.JSON;
 import com.kjcManager.json.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import com.kjcManager.services.KjcService;
 import com.kjcManager.util.Config;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class KjcController {
@@ -336,9 +335,14 @@ public class KjcController {
 		return toPage;
 	}
 
+	// 修改的部分
 	@RequestMapping(value = "/xslw/sjlw.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String xslwSjlw(HttpServletRequest request) {
-		String toPage = "forward:/ws/kjc/xslw/sjlw.html";
+	public String xslwSjlw(@RequestParam(value = "year", required = false, defaultValue = "") String year,
+						 Model model) {
+		String toPage = "forward:/ws/kjc/xslw/sjlw2.jsp";
+		List<PaperTop> query = this.kjcService.queryListByYear("");
+		JSONArray awardJson = JSONArray.fromObject(query);
+		model.addAttribute("awardJson", awardJson);
 		return toPage;
 	}
 
@@ -433,4 +437,6 @@ public class KjcController {
 		model.addAttribute("addTime", file.getAddTime());
 		return toPage;
 	}
+
+
 }

@@ -271,4 +271,40 @@ public class KjcService {
 		}
 		return patentList;
 	}
+
+    public List<PaperTop> queryListByYear(String year) {
+		String sql = "";
+		Query query = null;
+		if("".equals(year)) {
+			sql = "SELECT * FROM ws_a_cugb_top ORDER BY year DESC";
+		} else {
+			sql = "SELECT * FROM ws_a_cugb_top WHERE year = :year ORDER BY year DESC";
+		}
+
+		query = this.em.createNativeQuery(sql);
+		if(!"".equals(year)) {
+			query.setParameter("year", year);
+		}
+
+		List resultList = query.getResultList();
+		List<PaperTop> paperTops = new ArrayList<>();
+		if(resultList != null && resultList.size() > 0) {
+			for(int i = 0; i < resultList.size(); i ++) {
+				Object[] obj = (Object[]) resultList.get(i);
+				PaperTop p = new PaperTop();
+				p.setId(i+1);
+				p.setSort(obj[1] == null ? "" : obj[1].toString());
+				p.setCorresAuthor(obj[2] == null ? "" : obj[2].toString());
+				p.setFirstAuthor(obj[3] == null ? "" : obj[3].toString());
+				p.setPaperTitle(obj[4] == null ? "" : obj[4].toString());
+				p.setCitations(obj[5] == null ? 0 : Integer.parseInt(obj[5].toString()));
+				p.setTotalCitations(obj[6] == null ? 0 : Integer.parseInt(obj[6].toString()));
+				p.setJournalTitle(obj[7] == null ? "" : obj[7].toString());
+				p.setPaperYear(obj[8] == null ? "" : obj[8].toString());
+				p.setYear(obj[9] == null ? "" : obj[9].toString());
+				paperTops.add(p);
+			}
+		}
+		return paperTops;
+    }
 }
