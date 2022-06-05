@@ -160,26 +160,10 @@
                         <a @click="changeYear(item.id)" style="margin-right: 2px;" v-for="(item) in yearArr"
                             :key="item.id" href="javascript:;">[{{item.year}}]
                         </a>
-                        <!-- <el-select style="margin-left: 40px;" size="mini" width="30" v-model="valueBegin" placeholder="请选择">
-                        <el-option v-for="item in yearArr" :key="item.id" :value="item.year">
-                        </el-option>
-                    </el-select>
-                    -
-                    <el-select size="mini" width="30" v-model="valueEnd" placeholder="请选择">
-                        <el-option v-for="item in yearArr" :key="item.id" :value="item.year">
-                        </el-option>
-                    </el-select>
-                    <el-button @click="search(valueBegin,valueEnd)" size="mini" type="primary">查询</el-button> -->
                     </div>
                     <div class="detail_title" v-if="year=='' || year==0" style="padding-top: 20px;">·中国地质大学（北京）
                         {{valueBegin}}~{{valueEnd}} 年度十佳论文</div>
                     <div class="detail_title" v-else style="padding-top: 20px;">·中国地质大学（北京） {{year}} 年度十佳论文</div>
-                    <!-- pc端 时间 次数 -->
-                    <!-- <div class="detail_info"><label>发布时间：2021-06-17</label><label>阅读：<span id="hitcount691753">0</span>
-                        
-                        次
-                    </label></div> -->
-                    <!-- 移动端 时间 次数 发布人-->
                     <div class="m_detail_info">
                         <div>
                             <label>[信息网络中心]魏玮</label>

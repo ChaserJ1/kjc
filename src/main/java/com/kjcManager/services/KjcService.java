@@ -276,14 +276,14 @@ public class KjcService {
 		String sql = "";
 		Query query = null;
 		if("".equals(year)) {
-			sql = "SELECT * FROM ws_a_cugb_top ORDER BY year DESC";
+			sql = "SELECT * FROM ws_a_cugb_top ORDER BY paperYear DESC";
 		} else {
-			sql = "SELECT * FROM ws_a_cugb_top WHERE year = :year ORDER BY year DESC";
+			sql = "SELECT * FROM ws_a_cugb_top WHERE paperYear = :paperYear ORDER BY paperYear DESC";
 		}
 
 		query = this.em.createNativeQuery(sql);
 		if(!"".equals(year)) {
-			query.setParameter("year", year);
+			query.setParameter("paperYear", year);
 		}
 
 		List resultList = query.getResultList();
@@ -306,5 +306,14 @@ public class KjcService {
 			}
 		}
 		return paperTops;
+    }
+
+    public List<String> getAllYear() {
+	    String sql = "SELECT DISTINCT paperYear FROM ws_a_cugb_top ORDER BY paperYear ASC";
+        Query query = null;
+        query = this.em.createNativeQuery(sql);
+
+        List<String> resultList = query.getResultList();
+        return resultList;
     }
 }

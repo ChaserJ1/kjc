@@ -50,7 +50,7 @@ public class PaperTop {
     }
 
     public void setPaperTitle(String paperTitle) {
-        this.paperTitle = paperTitle;
+        this.paperTitle = paperTitle == null ? "" : paperTitle.trim();
     }
 
     public Integer getCitations() {
@@ -82,7 +82,7 @@ public class PaperTop {
     }
 
     public void setPaperYear(String paperYear) {
-        this.paperYear = paperYear == null ? "" : paperTitle.trim();
+        this.paperYear = paperYear == null ? "" : paperYear.trim();
     }
 
     public String getYear() {

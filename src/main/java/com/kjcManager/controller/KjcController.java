@@ -340,9 +340,19 @@ public class KjcController {
 	public String xslwSjlw(@RequestParam(value = "year", required = false, defaultValue = "") String year,
 						 Model model) {
 		String toPage = "forward:/ws/kjc/xslw/sjlw2.jsp";
-		List<PaperTop> query = this.kjcService.queryListByYear("");
+		List<PaperTop> query = kjcService.queryListByYear(year);
+		List<String> years = kjcService.getAllYear();
 		JSONArray awardJson = JSONArray.fromObject(query);
+		if(years != null && years.size() > 0) {
+			model.addAttribute("beginYear", years.get(0));
+			model.addAttribute("endYear", years.get(years.size() - 1));
+		}
 		model.addAttribute("awardJson", awardJson);
+		model.addAttribute("years", years);
+		if(!"".equals(year)) {
+			model.addAttribute("yearSelect", year);
+		}
+
 		return toPage;
 	}
 
