@@ -136,7 +136,7 @@
             </div>
         </div>
         <div class="list_banner_botbox">
-            <div class="list_title">${yearSelect==null?'':yearSelect}十佳论文</div>
+            <div class="list_title">${yearSelect==null?'':yearSelect} 十佳论文</div>
         </div>
     </div>
     <!-- 内容详情区 -->
@@ -153,9 +153,9 @@
                 ${beginYear}~${endYear} 年度十佳论文</div>
             <div class="detail_title" v-else style="padding-top: 10px;">
                 <div class="btn-wrap" style="text-align: center;">
-                    <a class="btn btn-sm btn-success" href="${PATH}/xslw/sjlw.do">总体情况</a>
-                    <a class="btn btn-sm btn-success" href="${PATH}/xslw/sjlw.do">院系对比</a>
-                    <a class="btn btn-sm btn-success" href="${PATH}/xslw/sjlw.do">十佳论文</a>
+                    <a class="btn btn-sm btn-primary" href="${PATH}/cugbPapers.do">总体情况</a>
+                    <a class="btn btn-sm btn-primary" href="${PATH}/xslw/yxdb.do">院系对比</a>
+                    <a class="btn btn-sm btn-primary" href="${PATH}/xslw/sjlw.do">十佳论文</a>
                 </div>
             </div>
         </div>

@@ -335,11 +335,11 @@ public class KjcController {
 		return toPage;
 	}
 
-	// 修改的部分
+	// 十佳论文展示
 	@RequestMapping(value = "/xslw/sjlw.do", method = { RequestMethod.POST, RequestMethod.GET })
 	public String xslwSjlw(@RequestParam(value = "year", required = false, defaultValue = "") String year,
 						 Model model) {
-		String toPage = "forward:/ws/kjc/xslw/sjlw2.jsp";
+		String toPage = "forward:/ws/kjc/xslw/sjlw.jsp";
 		List<PaperTop> query = kjcService.queryListByYear(year);
 		List<String> years = kjcService.getAllYear();
 		JSONArray awardJson = JSONArray.fromObject(query);
