@@ -150,7 +150,7 @@
                 </c:forEach>
             </div>
             <div class="detail_title" style="padding-top: 20px;">·中国地质大学（北京）
-                ${beginYear}~${endYear} 年度十佳论文</div>
+                ${beginYear} ~ ${endYear} 年度十佳论文</div>
             <div class="detail_title" v-else style="padding-top: 10px;">
                 <div class="btn-wrap" style="text-align: center;">
                     <a class="btn btn-sm btn-primary" href="${PATH}/cugbPapers.do">总体情况</a>

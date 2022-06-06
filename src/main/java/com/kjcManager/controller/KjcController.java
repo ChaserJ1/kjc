@@ -347,6 +347,15 @@ public class KjcController {
 			model.addAttribute("beginYear", years.get(0));
 			model.addAttribute("endYear", years.get(years.size() - 1));
 		}
+
+//		Integer sum = 0;
+//		if(!"".equals(year)) {
+//		    for(PaperTop p : query) {
+//		        sum += p.getTotalCitations();
+//            }
+//		    model.addAttribute("sum", sum);
+//        }
+
 		model.addAttribute("awardJson", awardJson);
 		model.addAttribute("years", years);
 		if(!"".equals(year)) {
