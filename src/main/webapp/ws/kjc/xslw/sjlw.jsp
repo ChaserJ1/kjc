@@ -160,11 +160,9 @@
             </div>
         </div>
         <div class="detail_content_box" style="padding-left:0;padding-top:0;padding-bottom:0">
-            <!--  BEGIN MAIN CONTAINER  -->
             <div class="detail_content_box" style="padding-left:0;padding-top:0;padding-bottom:0">
                 <table id="demo" lay-filter="test" style="padding-left:0;padding-top:0;padding-bottom:0"></table>
             </div>
-            <!-- END MAIN CONTAINER -->
         </div>
     </div>
 
