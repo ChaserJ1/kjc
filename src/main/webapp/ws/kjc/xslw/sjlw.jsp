@@ -22,7 +22,7 @@
             height: 500px;
         }
     </style>
-    <script src="/kjcManager/ws/cugb/js/jquery-1.12.4.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/jquery-3.1.0.min.js"></script>
     <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
     <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
     <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
