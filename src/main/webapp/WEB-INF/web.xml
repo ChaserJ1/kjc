@@ -86,11 +86,6 @@
 	</mime-mapping>
 
 	<mime-mapping>
-		<extension>xlsx</extension>
-		<mime-type>application/OCTET-STREAM</mime-type>
-	</mime-mapping>
-
-	<mime-mapping>
 		<extension>zip</extension>
 		<mime-type>application/zip</mime-type>
 	</mime-mapping>

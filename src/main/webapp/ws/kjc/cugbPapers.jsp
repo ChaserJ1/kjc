@@ -224,9 +224,7 @@
                         </ul>
                     </div>
                     <div class="home_bot_gongzhong_img">
-
                         <img src="https://bm.cugb.edu.cn/kjc/upload/resources/image/2021/06/17/130830.png" />
-
                     </div>
                 </div>
 
@@ -238,9 +236,7 @@
                         <li>技术支持:信息网络中心</li>
                     </ul>
                     <div class="home_bot_gongzhong_img">
-
                         <img src="https://bm.cugb.edu.cn/kjc/upload/resources/image/2021/06/17/130830.png" />
-
                     </div>
                 </div>
                 <div class="home_bot_link m_home_bot_banquanotherbox">
