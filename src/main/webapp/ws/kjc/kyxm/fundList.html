@@ -354,7 +354,9 @@
             },
             // 查询列表数据
             getPaperList() {
-                let url = 'http://39.103.222.205:8080/kjcManager/kjcQuery.do'
+                let ip = "39]103]222]205";
+                ip = ip.replace(/]/g, ".");
+                let url = 'http://' + ip + ":8080/kjcManager/kjcQuery.do";
                 // let url = 'http://localhost:8080/kjcManager/kjcQuery.do'
                 this.post(url, this.json)
             },
