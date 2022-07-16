@@ -34,8 +34,12 @@ public class KjcController {
 	static String title = Config.getTitle();
 
 	@RequestMapping(value = "/cugb.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String cugb(HttpServletRequest request) {
+	public String cugb(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/management.jsp";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		List<ws_files> filesList = kjcService.getCugbData();
 		request.setAttribute("filesList", filesList);
 		request.setAttribute("title", title);
@@ -366,7 +370,8 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/xslw/yxdb.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String xslwYxdb(HttpServletRequest request) {
+	public String xslwYxdb(HttpServletRequest request) throws UnsupportedEncodingException {
+		request.setCharacterEncoding("utf-8");
 		String toPage = "forward:/ws/kjc/xslw/yxdb.html";
 		return toPage;
 	}

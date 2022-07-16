@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="*">
     <title>科技处</title>
     <link rel="icon" type="image/x-icon" href="/kjcManager/ws/assets/img/favicon.ico"/>
     <link href="/kjcManager/ws/assets/css/loader.css" rel="stylesheet" type="text/css" />
@@ -88,7 +89,7 @@
     <!-- END MAIN CONTAINER -->
 	
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="/kjcManager/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/jquery-3.6.0.min.js"></script>
     <script src="/kjcManager/ws/bootstrap/js/popper.min.js"></script>
     <script src="/kjcManager/ws/bootstrap/js/bootstrap.min.js"></script>
     <script src="/kjcManager/ws/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>

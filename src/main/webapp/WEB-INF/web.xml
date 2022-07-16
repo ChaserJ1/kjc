@@ -20,6 +20,10 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
+	<listener>
+		<listener-class>com.kjcManager.listener.DriverMangerListener</listener-class>
+	</listener>
+
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -44,8 +48,7 @@
 	</filter>
 
 	<filter>
-		<description>
-		</description>
+		<description></description>
 		<display-name>LoginFilter</display-name>
 		<filter-name>LoginFilter</filter-name>
 		<filter-class>com.kjcManager.tools.LoginFilter</filter-class>

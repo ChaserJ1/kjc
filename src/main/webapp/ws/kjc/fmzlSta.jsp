@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="*">
     <title>科技处</title>
     <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
     <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
@@ -14,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/list.css">
     <!-- 引入样式 -->
     <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/lib-master/theme-chalk/index.css" />
-    <script src="/kjcManager/ws/cugb/js/jquery-3.1.0.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/jquery-3.6.0.min.js"></script>
     <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
     <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
     <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
@@ -254,7 +255,7 @@
         <!-- 底部结束 -->
     </div>
 	<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="/kjcManager/ws/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="/kjcManager/ws/cugb/js/jquery-3.6.0.min.js"></script>
 	<!-- Resources -->
 	<script src="/kjcManager/ws/plugins/amcharts/core.js"></script>
 	<script src="/kjcManager/ws/plugins/amcharts/charts.js"></script>
