@@ -77,9 +77,13 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/cugbResearchers.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String cugbResearchers(HttpServletRequest request) {
+	public String cugbResearchers(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/cugbResearchers.jsp";
 		// 科研队伍
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		List<ws_a_cugb> ws_a_cugbList = kjcService.getCugb("KYDW");
 		List<String> ws_a_cugb_k = getYearList();
 		List<Float> ws_a_cugb_JJR_v = new ArrayList<Float>();
@@ -140,9 +144,13 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/cugbFunds.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String cugbFunds(HttpServletRequest request) {
+	public String cugbFunds(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/cugbFunds.jsp";
 		// 科研项目
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		List<ws_a_cugb> ws_a_cugbList = kjcService.getCugb("KYXM");
 		List<String> ws_a_cugb_k = getYearList();
 		List<Float> ws_a_cugb_NDZ_v = new ArrayList<Float>();
@@ -189,8 +197,12 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/cugbPapers.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String cugbPapers(HttpServletRequest request) {
+	public String cugbPapers(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/cugbPapers.jsp";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		// 学术论文
 		List<ws_a_cugb> ws_a_cugbList = kjcService.getCugb("XSLW");
 		List<String> ws_a_cugb_k = getYearList();
@@ -238,8 +250,12 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/fmzlSta.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String fmzlSta(HttpServletRequest request) {
+	public String fmzlSta(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/fmzlSta.jsp";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		List<ws_a_cugb> ws_a_cugbList = kjcService.getCugb("CGZH");
 		List<String> ws_a_cugb_k = getYearList();
 		List<Float> ws_a_cugb_ZLS_v = new ArrayList<Float>();
@@ -286,8 +302,12 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/pingtaiList.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String pingtaiList(HttpServletRequest request) {
+	public String pingtaiList(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/pingtaiList.jsp";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		List<ws_files> pingtaiList = kjcService.getCugbData("1");
 		List<ws_files> getCugbData = kjcService.getCugbData();
 		ws_files ws_files = getCugbData.get(4);
@@ -304,8 +324,12 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/huojiangList.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String huojiangList(HttpServletRequest request) {
+	public String huojiangList(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/huojiangList.jsp";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		List<ws_award> awardList = kjcService.getAward();
 		List<ws_files> getCugbData = kjcService.getCugbData();
 		ws_files ws_files = getCugbData.get(5);
@@ -322,28 +346,45 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/kyxm/fund.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String kyxmFund(HttpServletRequest request) {
+	public String kyxmFund(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/kyxm/fundList.html";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		return toPage;
 	}
 
 	@RequestMapping(value = "/kyxm/nstProject.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String kyxmNstProject(HttpServletRequest request) {
+	public String kyxmNstProject(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/kyxm/nstProject.html";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		return toPage;
 	}
 
 	@RequestMapping(value = "/kyxm/yxdb.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String kyxmYxdb(HttpServletRequest request) {
+	public String kyxmYxdb(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/kyxm/yxdb.html";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		return toPage;
 	}
 
 	// 十佳论文展示
 	@RequestMapping(value = "/xslw/sjlw.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String xslwSjlw(@RequestParam(value = "year", required = false, defaultValue = "") String year,
-						 Model model) {
+	public String xslwSjlw(HttpServletResponse response,
+						   @RequestParam(value = "year", required = false, defaultValue = "") String year,
+						   Model model) {
 		String toPage = "forward:/ws/kjc/xslw/sjlw.jsp";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		List<PaperTop> query = kjcService.queryListByYear(year);
 		List<String> years = kjcService.getAllYear();
 		JSONArray awardJson = JSONArray.fromObject(query);
@@ -370,27 +411,43 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/xslw/yxdb.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String xslwYxdb(HttpServletRequest request) throws UnsupportedEncodingException {
+	public String xslwYxdb(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
 		request.setCharacterEncoding("utf-8");
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		String toPage = "forward:/ws/kjc/xslw/yxdb.html";
 		return toPage;
 	}
 
 	@RequestMapping(value = "/xslw/paperList.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String xslwPaperList(HttpServletRequest request) {
+	public String xslwPaperList(HttpServletRequest request, HttpServletResponse response) {
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		String toPage = "forward:/ws/kjc/xslw/paperList.html";
 		return toPage;
 	}
 
 	@RequestMapping(value = "/kyxm/fundList.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String kyxmFundList(HttpServletRequest request) {
+	public String kyxmFundList(HttpServletRequest request, HttpServletResponse response) {
 		String toPage = "forward:/ws/kjc/kyxm/fundList.html";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		return toPage;
 	}
 
 	@RequestMapping(value = { "/kjcQueryList.do" }, method = {RequestMethod.POST, RequestMethod.GET })
 	public void kjcQueryList(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		request.setCharacterEncoding(charset);
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		response.setContentType("text/html;charset=" + charset);
 		response.setHeader("Access-Control-Allow-Origin", "*");
 		String jsonString = getRequestJsonString(request, charset);
@@ -408,6 +465,10 @@ public class KjcController {
 		request.setCharacterEncoding(charset);
 		response.setContentType("text/html;charset=" + charset);
 		response.setHeader("Access-Control-Allow-Origin", "*");
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		String jsonString = getRequestJsonString(request, charset);
 		ws_a_cugb_dept_detail bean = (ws_a_cugb_dept_detail) JSONObject.toBean(JSONObject.fromObject(jsonString),
 				ws_a_cugb_dept_detail.class);
@@ -450,8 +511,13 @@ public class KjcController {
 	}
 
 	@RequestMapping(value = "/fmzl/zhzl.do", method = RequestMethod.GET)
-	public String fmzlYxdb(@RequestParam("patent") String patent, Model model) {
+	public String fmzlYxdb(HttpServletResponse response,
+						   @RequestParam("patent") String patent, Model model) {
 		String toPage = "forward:/ws/kjc/fmzl/patentList.jsp";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		List<Patent> list = kjcService.getPatentByCategory(patent);
 		ws_files file = kjcService.getCugbData().get(3);
 		JSONArray awardJson = JSONArray.fromObject(list);
@@ -461,6 +527,5 @@ public class KjcController {
 		model.addAttribute("addTime", file.getAddTime());
 		return toPage;
 	}
-
 
 }
