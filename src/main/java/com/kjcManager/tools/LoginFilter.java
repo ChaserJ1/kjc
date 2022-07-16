@@ -54,7 +54,7 @@ public class LoginFilter implements Filter {
         		|| path.indexOf("/kyxm/fund.do") > -1|| path.indexOf("/kyxm/nstProject.do") > -1|| path.indexOf("/kyxm/yxdb.do") > -1
         		|| path.indexOf("/xslw/sjlw.do") > -1|| path.indexOf("/xslw/yxdb.do") > -1|| path.indexOf("/xslw/paperList.do") > -1
         		|| path.indexOf("/kyxm/fundList.do") > -1|| path.indexOf("/kjcQuery.do") > -1|| path.indexOf("/kjcQueryList.do") > -1|| path.indexOf("/cugb.do") > -1
-                || path.indexOf("/fmzl/zhzl.do") > -1) {
+                || path.indexOf("/fmzl/zhzl.do") > -1 || path.indexOf("/test.do") > -1) {
             chain.doFilter(servletRequest, servletResponse);
             return;
         }
