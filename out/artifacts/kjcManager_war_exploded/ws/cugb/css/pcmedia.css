@@ -1,0 +1,38 @@
+/* hometop */
+@media screen and (min-width: 768px) {
+    .timeline .swiper-pagination {
+      display: flex;
+    }
+  
+  }
+  @media screen and (min-width: 1024px){
+    .timeline .swiper-slide::after {
+      right: -20%;
+      bottom: -12%;
+      width: 240px;
+      height: 50%;
+    }
+  }
+/* index */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .timeline .swiper-pagination-bullet::before, .timeline .swiper-pagination-switch::before{
+        top: -20px;
+    }
+  }
+@media screen and (max-width: 1244px) {
+    .home_headerbox{
+        position: relative;
+    }
+    .home_pagemainbox{
+        position: relative;
+        top: -130px;
+    }
+    .home_banner .timeline .swiper-container {
+        height: 467px;
+    }
+}
+@media screen and (max-width: 668px) {
+	.home_news {
+		background-size: auto 100%;
+	}
+}
