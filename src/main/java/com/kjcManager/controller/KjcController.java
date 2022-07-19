@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.alibaba.fastjson.JSON;
 import com.kjcManager.json.*;
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -464,11 +465,11 @@ public class KjcController {
 	public void kjcQuery(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		request.setCharacterEncoding(charset);
 		response.setContentType("text/html;charset=" + charset);
-		response.setHeader("Access-Control-Allow-Origin", "*");
-		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
-		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
-		response.setHeader("X-Download-Options", "noopen");
-		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+//		response.setHeader("Access-Control-Allow-Origin", "*");
+//		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+//		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+//		response.setHeader("X-Download-Options", "noopen");
+//		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		String jsonString = getRequestJsonString(request, charset);
 		ws_a_cugb_dept_detail bean = (ws_a_cugb_dept_detail) JSONObject.toBean(JSONObject.fromObject(jsonString),
 				ws_a_cugb_dept_detail.class);
@@ -488,9 +489,11 @@ public class KjcController {
 	public static String getRequestJsonString(HttpServletRequest request, String charset) throws IOException {
 		String submitMehtod = request.getMethod();
 		if (submitMehtod.equals("GET")) {
+			System.out.println(new String(request.getQueryString().getBytes("GBK"), charset).replaceAll("%22", "\""));
 			return new String(request.getQueryString().getBytes("GBK"), charset).replaceAll("%22", "\"");
 		}
 		byte[] buffer = getRequestPostBytes(request);
+		System.out.println(new String(buffer, charset));
 		return new String(buffer, charset);
 	}
 

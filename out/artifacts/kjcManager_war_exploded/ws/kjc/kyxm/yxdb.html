@@ -395,7 +395,6 @@
                 let hrefUrl = window.location.href;
                 var n = hrefUrl.indexOf("kjcManager");
                 let url = hrefUrl.substr(0, n + 11) + "kjcQueryList.do";
-                // let url = 'http://localhost:8080/kjcManager/kjcQueryList.do'
                 this.post(url, this.json)
             },
             post(url, param) {
