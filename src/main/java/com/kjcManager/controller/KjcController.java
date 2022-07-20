@@ -346,15 +346,6 @@ public class KjcController {
 		return toPage;
 	}
 
-	@RequestMapping(value = "/kyxm/fund.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String kyxmFund(HttpServletRequest request, HttpServletResponse response) {
-		String toPage = "forward:/ws/kjc/kyxm/fundList.html";
-		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
-		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
-		response.setHeader("X-Download-Options", "noopen");
-		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
-		return toPage;
-	}
 
 	@RequestMapping(value = "/kyxm/nstProject.do", method = { RequestMethod.POST, RequestMethod.GET })
 	public String kyxmNstProject(HttpServletRequest request, HttpServletResponse response) {
@@ -432,16 +423,6 @@ public class KjcController {
 		return toPage;
 	}
 
-	@RequestMapping(value = "/kyxm/fundList.do", method = { RequestMethod.POST, RequestMethod.GET })
-	public String kyxmFundList(HttpServletRequest request, HttpServletResponse response) {
-		String toPage = "forward:/ws/kjc/kyxm/fundList.html";
-		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
-		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
-		response.setHeader("X-Download-Options", "noopen");
-		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
-		return toPage;
-	}
-
 	@RequestMapping(value = { "/kjcQueryList.do" }, method = {RequestMethod.POST, RequestMethod.GET })
 	public void kjcQueryList(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		request.setCharacterEncoding(charset);
@@ -465,11 +446,11 @@ public class KjcController {
 	public void kjcQuery(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		request.setCharacterEncoding(charset);
 		response.setContentType("text/html;charset=" + charset);
-//		response.setHeader("Access-Control-Allow-Origin", "*");
-//		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
-//		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
-//		response.setHeader("X-Download-Options", "noopen");
-//		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		String jsonString = getRequestJsonString(request, charset);
 		ws_a_cugb_dept_detail bean = (ws_a_cugb_dept_detail) JSONObject.toBean(JSONObject.fromObject(jsonString),
 				ws_a_cugb_dept_detail.class);
