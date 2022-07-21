@@ -9,12 +9,12 @@
     <meta http-equiv="Content-Security-Policy" content="*">
     <title>十佳论文</title>
     <%pageContext.setAttribute("PATH", request.getContextPath());%>
-    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
-    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
-    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/hometop.css">
-    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/indexmb1.css">
-    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/list.css">
-    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/layui/css/layui.css">
+    <link rel="stylesheet" href="${PATH}/ws/cugb/css/swiper.min.css">
+    <link rel="stylesheet" href="${PATH}/ws/cugb/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="${PATH}/ws/cugb/css/hometop.css">
+    <link rel="stylesheet" type="text/css" href="${PATH}/ws/cugb/css/indexmb1.css">
+    <link rel="stylesheet" type="text/css" href="${PATH}/ws/cugb/css/list.css">
+    <link rel="stylesheet" type="text/css" href="${PATH}/ws/cugb/layui/css/layui.css">
     <link rel="stylesheet" href="${PATH}/ws/bootstrap/css/bootstrap.min.css">
     <!-- Styles -->
     <style>
@@ -23,11 +23,11 @@
             height: 500px;
         }
     </style>
-    <script src="/kjcManager/ws/cugb/js/jquery-3.6.0.min.js"></script>
-    <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
-    <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
-    <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
-    <script src="/kjcManager/ws/cugb/js/paging.js"></script>
+    <script src="${PATH}/ws/cugb/js/jquery-3.6.0.min.js"></script>
+    <script src="${PATH}/ws/cugb/js/idangerous.swiper.min.js"></script>
+    <script src="${PATH}/ws/cugb/js/scrollReveal.js" async></script>
+    <script src="${PATH}/ws/cugb/js/anime.min.js" async></script>
+    <script src="${PATH}/ws/cugb/js/paging.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
@@ -218,8 +218,8 @@
     <!-- 底部结束 -->
 </div>
 <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-<script src="/kjcManager/ws/cugb/js/jquery-3.6.0.min.js"></script>
-<script src="/kjcManager/ws/cugb/layui/layui.js"></script>
+<script src="${PATH}/ws/cugb/js/jquery-3.6.0.min.js"></script>
+<script src="${PATH}/ws/cugb/layui/layui.js"></script>
 <script>
     layui.use('table', function () {
         var table = layui.table;
