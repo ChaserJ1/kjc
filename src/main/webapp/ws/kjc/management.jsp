@@ -14,7 +14,7 @@
     <script src="${PATH}/ws/assets/js/loader.js"></script>
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="${PATH}/ws/cugb/font/css.css" rel="stylesheet">
     <link href="${PATH}/ws/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="${PATH}/ws/assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="${PATH}/ws/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
@@ -30,7 +30,7 @@
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 	<link rel="stylesheet" type="text/css" href="${PATH}/ws/assets/css/button.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+	<link href="${PATH}/ws/cugb/font/css2.css" rel="stylesheet">
 	<style>
 		.panel-head{
 			font-size: 1rem; color: rgba(255,255,255,.7); line-height: 2rem; text-align: center;

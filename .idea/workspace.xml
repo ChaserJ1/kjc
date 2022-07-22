@@ -7,36 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7758ee18-8bbb-40ad-b782-7693165c5d80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/WEB-INF/errors/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/WEB-INF/errors/404.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/cugb/jquery404/css/404.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/cugb/jquery404/css/404.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/cugb/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/cugb/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/kjc/cugbFunds.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/kjc/cugbFunds.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/kjc/cugbPapers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/kjc/cugbPapers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/kjc/kyxm/yxdb.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/kjc/kyxm/yxdb.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/kjc/management.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/ws/kjc/management.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/errors/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/errors/404.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/jquery404/css/404.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/jquery404/css/404.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/amcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/amcharts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/amchartsdark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/amchartsdark.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/animated.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/animated.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/dark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/dark.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/dataviz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/dataviz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/frozen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/frozen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/kelly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/kelly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/material.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/material.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/microchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/microchart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/moonrisekingdom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/moonrisekingdom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/patterns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/patterns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/spiritedaway.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/spiritedaway.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/kjc/management.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/kjc/management.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/maps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,73 +24,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-cugbResearchers.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-fmzlSta.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-statistics-papers.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-statistics-year.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/animated.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/anime.min.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/pingtaiList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="167">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/charts.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/fmzl/patentList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/core.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/animate/animate.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <state relative-caret-position="352">
+              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/jquery404/css/404.css">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/management.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="423">
+              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/fmzlSta.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbResearchers.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbPapers.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbFunds.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -134,8 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>type</find>
-      <find>huojiangLis</find>
       <find>sjlw.do</find>
       <find>queryListByYear</find>
       <find>/xslw/sjlw.do</find>
@@ -161,9 +121,11 @@
       <find>index.css</find>
       <find>v=256</find>
       <find>../</find>
-      <find>cugb.do</find>
-      <find>@</find>
       <find>contact@amcharts.com</find>
+      <find>@</find>
+      <find>yxdb.do</find>
+      <find>ws/cugb/layui/css/layui.css</find>
+      <find>cugb.do</find>
     </findStrings>
     <replaceStrings>
       <replace>${PATH}</replace>
@@ -179,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/webscience/services/KjcService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/sjlw2.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/json/PaperTop.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/sjlw3.jsp" />
@@ -206,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/fmzlSta.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbResearchers.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/tools/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbPapers.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbFunds.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/layui/css/layui.css" />
@@ -230,6 +190,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/spiritedaway.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/charts.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/core.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/maps.js" />
       </list>
     </option>
   </component>
@@ -285,9 +247,9 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="457" />
-    <option name="y" value="41" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="223" />
+    <option name="y" value="38" />
     <option name="width" value="1549" />
     <option name="height" value="1015" />
   </component>
@@ -374,14 +336,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="ws" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,8 +354,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="ws" type="462c0819:PsiDirectoryNode" />
-              <item name="cugb" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery404" type="462c0819:PsiDirectoryNode" />
+              <item name="kjc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
@@ -410,9 +363,28 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="ws" type="462c0819:PsiDirectoryNode" />
-              <item name="cugb" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery404" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="kjc" type="462c0819:PsiDirectoryNode" />
+              <item name="fmzl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ws" type="462c0819:PsiDirectoryNode" />
+              <item name="kjc" type="462c0819:PsiDirectoryNode" />
+              <item name="kyxm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ws" type="462c0819:PsiDirectoryNode" />
+              <item name="kjc" type="462c0819:PsiDirectoryNode" />
+              <item name="xslw" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -636,18 +608,18 @@
       <workItem from="1658319806591" duration="965000" />
       <workItem from="1658371015979" duration="1101000" />
       <workItem from="1658453934167" duration="6909000" />
-      <workItem from="1658472676597" duration="1144000" />
+      <workItem from="1658472676597" duration="2770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127691000" />
+    <option name="totallyTimeSpent" value="129317000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="550" y="56" width="1549" height="1015" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25184688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19989339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -658,7 +630,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32825485" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3559557" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.30810234" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.30810234" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -666,7 +638,7 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.37739873" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23027718" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -690,272 +662,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/controller/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/paperList.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/fundList.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/css/swiper.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/sjlw.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/yxdb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8712">
-          <caret line="396" column="57" selection-start-line="396" selection-start-column="57" selection-end-line="396" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/fmzl/patentList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/pingtaiList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2590">
-          <caret line="195" column="56" selection-start-line="195" selection-start-column="56" selection-end-line="195" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="217" column="26" lean-forward="true" selection-start-line="217" selection-start-column="26" selection-end-line="217" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/fmzlSta.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="270" column="19" selection-start-line="270" selection-start-column="19" selection-end-line="270" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/tools/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="47" column="68" lean-forward="true" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbPapers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="263" column="34" lean-forward="true" selection-start-line="263" selection-start-column="34" selection-end-line="263" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/echarts.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/errors/404.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/errors/500.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6688">
-          <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-          <folding>
-            <element signature="e#68877#69016#2" expanded="true" />
-            <element signature="e#70490#70629#2" expanded="true" />
-            <element signature="e#71155#71294#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/management.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbFunds.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5720">
-          <caret line="260" column="8" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/jquery404/js/404.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbResearchers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4884">
-          <caret line="222" column="33" selection-start-line="222" selection-start-column="33" selection-end-line="222" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/nstProject.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/kelly.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/frozen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/moonrisekingdom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/dataviz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/dark.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/charts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/material.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/amcharts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/amchartsdark.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/animated.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/microchart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/patterns.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/spiritedaway.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/amcharts-cugbFunds.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-cugbFunds.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-cugbPapers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-cugbResearchers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-fmzlSta.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-statistics-papers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/plugins/amcharts/amcharts-statistics-year.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -994,8 +700,233 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/jquery404/css/404.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="352">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/jquery404/js/404.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="369" column="51" lean-forward="true" selection-start-line="369" selection-start-column="51" selection-end-line="369" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="75" lean-forward="true" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/css/hometop.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/amcharts-cugbFunds.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/amcharts-cugbPapers.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/animated.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/axios.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/echarts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/idangerous.swiper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/jquery-3.6.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/mobilepclist.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/paging.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/pc.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/pclist.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/scrollReveal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-880">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/layui/layui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/aside.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/autocomplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/avatar.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/backtop.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/badge.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/breadcrumb.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/breadcrumb-item.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/button.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/button-group.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/calendar.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/card.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/carousel.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/lib-master/upload.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/fmzlSta.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbPapers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbFunds.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbResearchers.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/pingtaiList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/fmzl/patentList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/management.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
     </entry>
