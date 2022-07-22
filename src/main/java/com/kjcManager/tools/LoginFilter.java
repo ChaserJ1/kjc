@@ -47,14 +47,15 @@ public class LoginFilter implements Filter {
         // 从session里取用户信息
         String username = (String) session.getAttribute("username");
         // 无需过滤的页面
-        if(path.indexOf("/login.jsp") > -1 || path.indexOf(".ttf") > -1 || path.indexOf(".css") > -1 || path.indexOf(".js") > -1
-        		|| path.indexOf(".png") > -1 || path.indexOf(".jpg") > -1 || path.indexOf("/login.do") > -1 || path.indexOf(".html") > -1
-        		|| path.indexOf("/cugbResearchers.do") > -1|| path.indexOf("/cugbFunds.do") > -1|| path.indexOf("/cugbPapers.do") > -1
-        		|| path.indexOf("/fmzlSta.do") > -1|| path.indexOf("/pingtaiList.do") > -1|| path.indexOf("/huojiangList.do") > -1
-        		|| path.indexOf("/kyxm/fund.do") > -1|| path.indexOf("/kyxm/nstProject.do") > -1|| path.indexOf("/kyxm/yxdb.do") > -1
-        		|| path.indexOf("/xslw/sjlw.do") > -1|| path.indexOf("/xslw/yxdb.do") > -1|| path.indexOf("/xslw/paperList.do") > -1
-        		|| path.indexOf("/kyxm/fundList.do") > -1|| path.indexOf("/kjcQuery.do") > -1|| path.indexOf("/kjcQueryList.do") > -1|| path.indexOf("/cugb.do") > -1
-                || path.indexOf("/fmzl/zhzl.do") > -1 || path.indexOf("/test.do") > -1) {
+//        if(path.indexOf("/login.jsp") > -1 || path.indexOf(".ttf") > -1 || path.indexOf(".css") > -1 || path.indexOf(".js") > -1
+//        		|| path.indexOf(".png") > -1 || path.indexOf(".jpg") > -1 || path.indexOf("/login.do") > -1 || path.indexOf(".html") > -1
+//        		|| path.indexOf("/cugbResearchers.do") > -1|| path.indexOf("/cugbFunds.do") > -1|| path.indexOf("/cugbPapers.do") > -1
+//        		|| path.indexOf("/fmzlSta.do") > -1|| path.indexOf("/pingtaiList.do") > -1|| path.indexOf("/huojiangList.do") > -1
+//        		|| path.indexOf("/kyxm/fund.do") > -1|| path.indexOf("/kyxm/nstProject.do") > -1|| path.indexOf("/kyxm/yxdb.do") > -1
+//        		|| path.indexOf("/xslw/sjlw.do") > -1|| path.indexOf("/xslw/yxdb.do") > -1|| path.indexOf("/xslw/paperList.do") > -1
+//        		|| path.indexOf("/kyxm/fundList.do") > -1|| path.indexOf("/kjcQuery.do") > -1|| path.indexOf("/kjcQueryList.do") > -1|| path.indexOf("/cugb.do") > -1
+//                || path.indexOf("/fmzl/zhzl.do") > -1 || path.indexOf("/test.do") > -1) {
+        if(true) {
             chain.doFilter(servletRequest, servletResponse);
             return;
         }

@@ -41,6 +41,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		List<ws_files> filesList = kjcService.getCugbData();
 		request.setAttribute("filesList", filesList);
 		request.setAttribute("title", title);
@@ -85,6 +86,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		List<ws_a_cugb> ws_a_cugbList = kjcService.getCugb("KYDW");
 		List<String> ws_a_cugb_k = getYearList();
 		List<Float> ws_a_cugb_JJR_v = new ArrayList<Float>();
@@ -152,6 +154,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		List<ws_a_cugb> ws_a_cugbList = kjcService.getCugb("KYXM");
 		List<String> ws_a_cugb_k = getYearList();
 		List<Float> ws_a_cugb_NDZ_v = new ArrayList<Float>();
@@ -204,6 +207,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		// 学术论文
 		List<ws_a_cugb> ws_a_cugbList = kjcService.getCugb("XSLW");
 		List<String> ws_a_cugb_k = getYearList();
@@ -257,6 +261,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		List<ws_a_cugb> ws_a_cugbList = kjcService.getCugb("CGZH");
 		List<String> ws_a_cugb_k = getYearList();
 		List<Float> ws_a_cugb_ZLS_v = new ArrayList<Float>();
@@ -309,6 +314,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		List<ws_files> pingtaiList = kjcService.getCugbData("1");
 		List<ws_files> getCugbData = kjcService.getCugbData();
 		ws_files ws_files = getCugbData.get(4);
@@ -331,6 +337,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		List<ws_award> awardList = kjcService.getAward();
 		List<ws_files> getCugbData = kjcService.getCugbData();
 		ws_files ws_files = getCugbData.get(5);
@@ -354,6 +361,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		return toPage;
 	}
 
@@ -364,6 +372,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		return toPage;
 	}
 
@@ -377,6 +386,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		List<PaperTop> query = kjcService.queryListByYear(year);
 		List<String> years = kjcService.getAllYear();
 		JSONArray awardJson = JSONArray.fromObject(query);
@@ -409,6 +419,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		String toPage = "forward:/ws/kjc/xslw/yxdb.html";
 		return toPage;
 	}
@@ -419,6 +430,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		String toPage = "forward:/ws/kjc/xslw/paperList.html";
 		return toPage;
 	}
@@ -430,6 +442,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		response.setContentType("text/html;charset=" + charset);
 		response.setHeader("Access-Control-Allow-Origin", "*");
 		String jsonString = getRequestJsonString(request, charset);
@@ -451,6 +464,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		String jsonString = getRequestJsonString(request, charset);
 		ws_a_cugb_dept_detail bean = (ws_a_cugb_dept_detail) JSONObject.toBean(JSONObject.fromObject(jsonString),
 				ws_a_cugb_dept_detail.class);
@@ -502,6 +516,7 @@ public class KjcController {
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
 		List<Patent> list = kjcService.getPatentByCategory(patent);
 		ws_files file = kjcService.getCugbData().get(3);
 		JSONArray awardJson = JSONArray.fromObject(list);

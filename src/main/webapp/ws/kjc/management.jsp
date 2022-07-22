@@ -8,26 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Security-Policy" content="*">
     <title>科技处</title>
-    <link rel="icon" type="image/x-icon" href="/kjcManager/ws/assets/img/favicon.ico"/>
-    <link href="/kjcManager/ws/assets/css/loader.css" rel="stylesheet" type="text/css" />
-    <script src="/kjcManager/ws/assets/js/loader.js"></script>
+    <%pageContext.setAttribute("PATH", request.getContextPath());%>
+    <link rel="icon" type="image/x-icon" href="${PATH}/ws/assets/img/favicon.ico"/>
+    <link href="${PATH}/ws/assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <script src="${PATH}/ws/assets/js/loader.js"></script>
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
-    <link href="/kjcManager/ws/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="/kjcManager/ws/assets/css/main.css" rel="stylesheet" type="text/css" />
-    <link href="/kjcManager/ws/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
-    <link href="/kjcManager/ws/assets/css/structure.css" rel="stylesheet" type="text/css" />
-    <link href="/kjcManager/ws/plugins/highlight/styles/monokai-sublime.css" rel="stylesheet" type="text/css" />
+    <link href="${PATH}/ws/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="${PATH}/ws/assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="${PATH}/ws/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="${PATH}/ws/assets/css/structure.css" rel="stylesheet" type="text/css" />
+    <link href="${PATH}/ws/plugins/highlight/styles/monokai-sublime.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="/kjcManager/ws/assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
-    <link href="/kjcManager/ws/plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
-    <link href="/kjcManager/ws/assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
-    <link href="/kjcManager/ws/assets/css/components/custom-modal.css" rel="stylesheet" type="text/css" />
+    <link href="${PATH}/ws/assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="${PATH}/ws/plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="${PATH}/ws/assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
+    <link href="${PATH}/ws/assets/css/components/custom-modal.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-	<link rel="stylesheet" type="text/css" href="/kjcManager/ws/assets/css/button.css" />
+	<link rel="stylesheet" type="text/css" href="${PATH}/ws/assets/css/button.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
 	<style>
@@ -43,7 +44,7 @@
 		    border-collapse: collapse;
 		    border-spacing: 0;
 		    font-size: 12px;
-		};
+		}
 
 	</style>
 </head>
@@ -88,12 +89,12 @@
     <!-- END MAIN CONTAINER -->
 	
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="/kjcManager/ws/cugb/js/jquery-3.6.0.min.js"></script>
-    <script src="/kjcManager/ws/bootstrap/js/popper.min.js"></script>
-    <script src="/kjcManager/ws/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/kjcManager/ws/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="/kjcManager/ws/assets/js/app.js"></script>        
-    <script src="/kjcManager/ws/assets/js/custom.js"></script>
+    <script src="${PATH}/ws/cugb/js/jquery-3.6.0.min.js"></script>
+    <script src="${PATH}/ws/bootstrap/js/popper.min.js"></script>
+    <script src="${PATH}/ws/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${PATH}/ws/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="${PATH}/ws/assets/js/app.js"></script>
+    <script src="${PATH}/ws/assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 </body>
 </html>
