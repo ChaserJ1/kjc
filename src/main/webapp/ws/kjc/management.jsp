@@ -37,8 +37,8 @@
 			background: linear-gradient(rgb(0,20,30), rgb(0,40,70));
 			border: 2px solid rgba(0,90,120,.3);
 		}	
-		.dropdown-toggle{white-space: normal;};
-		.topbar-nav.header nav#topbar ul.menu-categories li.menu {padding: 2px 0 2px 0;};
+		.dropdown-toggle{white-space: normal;}
+		.topbar-nav.header nav#topbar ul.menu-categories li.menu {padding: 2px 0 2px 0;}
 		#warningcol {
 		    border: 1px solid #ccc;
 		    border-collapse: collapse;

@@ -1,15 +1,7 @@
-/*
- * 作者: QYZQ
- * 时间:2018.2.4
- * 备注:404页面设计灵感源于FreePik网站图片(https://www.freepik.com/free-vector/funny-error-404-background-design_1161579.htm#term=404&page=1&position=2),
- * 		FreePik网站提供免费下载渠道,网站也有提示侵权的通知,如有侵权请联系(Email: greatyuzequn@outlook.com),QYZQ将及时处理.
- */
-
 body, div, p, a{
 	margin: 0px;
 	padding: 0px;
 }
-
 p{
 	text-decoration: none;
 	user-select: none;

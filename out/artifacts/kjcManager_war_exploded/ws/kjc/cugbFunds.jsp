@@ -8,30 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Security-Policy" content="*">
     <title>科技处</title>
-    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
-    <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
-    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/hometop.css">
-    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/indexmb1.css">
-    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/list.css">
+    <%pageContext.setAttribute("PATH", request.getContextPath());%>
+    <link rel="stylesheet" href="${PATH}/ws/cugb/css/swiper.min.css">
+    <link rel="stylesheet" href="${PATH}/ws/cugb/css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="${PATH}/ws/cugb/css/hometop.css">
+    <link rel="stylesheet" type="text/css" href="${PATH}/ws/cugb/css/indexmb1.css">
+    <link rel="stylesheet" type="text/css" href="${PATH}/ws/cugb/css/list.css">
     <!-- 引入样式 -->
-    <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/lib-master/theme-chalk/index.css" />
-    <script src="/kjcManager/ws/cugb/js/jquery-3.6.0.min.js"></script>
-    <script src="/kjcManager/ws/cugb/js/idangerous.swiper.min.js"></script>
-    <script src="/kjcManager/ws/cugb/js/scrollReveal.js" async></script>
-    <script src="/kjcManager/ws/cugb/js/anime.min.js" async></script>
-    <script src="/kjcManager/ws/cugb/js/paging.js"></script>
+    <link rel="stylesheet" type="text/css" href="${PATH}/ws/cugb/lib-master/theme-chalk/index.css" />
+    <script src="${PATH}/ws/cugb/js/jquery-3.6.0.min.js"></script>
+    <script src="${PATH}/ws/cugb/js/idangerous.swiper.min.js"></script>
+    <script src="${PATH}/ws/cugb/js/scrollReveal.js" async></script>
+    <script src="${PATH}/ws/cugb/js/anime.min.js" async></script>
+    <script src="${PATH}/ws/cugb/js/paging.js"></script>
     <!-- 引入amchart核心文件 -->
-    <script src="/kjcManager/ws/cugb/js/core.js"></script>
-    <script src="/kjcManager/ws/cugb/js/charts.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/animated.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/material.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/dataviz.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/amchartsdark.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/dark.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/frozen.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/kelly.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/moonrisekingdom.js"></script>
-    <script src="/kjcManager/ws/cugb/js/themes/patterns.js"></script>
+    <script src="${PATH}/ws/cugb/js/core.js"></script>
+    <script src="${PATH}/ws/cugb/js/charts.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/animated.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/material.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/dataviz.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/amchartsdark.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/dark.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/frozen.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/kelly.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/moonrisekingdom.js"></script>
+    <script src="${PATH}/ws/cugb/js/themes/patterns.js"></script>
     <script>
         function loadJS(url, callback) {
             var script = document.createElement('script');
@@ -246,19 +247,17 @@
         <!-- 底部结束 -->
     </div>
 	<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="/kjcManager/ws/cugb/js/jquery-3.6.0.min.js"></script>
+    <script src="${PATH}/ws/cugb/js/jquery-3.6.0.min.js"></script>
 	<!-- Resources -->
-	<script src="/kjcManager/ws/cugb/js/core.js"></script>
-	<script src="/kjcManager/ws/cugb/js/charts.js"></script>
-	<script src="/kjcManager/ws/cugb/js/animated.js"></script>
+	<script src="${PATH}/ws/cugb/js/core.js"></script>
+	<script src="${PATH}/ws/cugb/js/charts.js"></script>
+	<script src="${PATH}/ws/cugb/js/animated.js"></script>
 	<!-- Chart code -->
-    <script src="/kjcManager/ws/cugb/js/amcharts-cugbFunds.js"></script>
+    <script src="${PATH}/ws/cugb/js/amcharts-cugbFunds.js"></script>
 </body>
-<script src="/kjcManager/ws/cugb/js/echarts.js"></script>
-<!-- import Vue before Element -->
-<script src="/kjcManager/ws/cugb/js/vue.js"></script>
-<!-- import JavaScript -->
-<script src="/kjcManager/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="${PATH}/ws/cugb/js/echarts.js"></script>
+<script src="${PATH}/ws/cugb/js/vue.js"></script>
+<script src="${PATH}/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
 <script>
     new Vue({
         el: '#app',

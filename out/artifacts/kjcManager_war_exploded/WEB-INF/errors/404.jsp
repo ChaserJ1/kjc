@@ -36,6 +36,6 @@
 			</div>
 			<p>PAGE NOT FOUND</p>
 		</div>
-		<script type="text/javascript" src="${PATH }/ws/cugb/jquery404/js/404.js" ></script>
+		<script type="text/javascript" src="${PATH}/ws/cugb/jquery404/js/404.js" ></script>
 	</body>
 </html>
