@@ -508,15 +508,16 @@ public class KjcController {
 		return buffer;
 	}
 
-	@RequestMapping(value = "/fmzl/zhzl.do", method = RequestMethod.GET)
-	public String fmzlYxdb(HttpServletResponse response,
-						   @RequestParam("patent") String patent, Model model) {
+	@RequestMapping("/fmzl/zhzl.do")
+	public String fmzlYxdb(HttpServletResponse response, @RequestParam("patent") String patent,
+						   Model model) {
 		String toPage = "forward:/ws/kjc/fmzl/patentList.jsp";
 		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		response.setHeader("Content-Security-Policy", "*");
+		response.setHeader("access-control-allow-origin", "*");
 		List<Patent> list = kjcService.getPatentByCategory(patent);
 		ws_files file = kjcService.getCugbData().get(3);
 		JSONArray awardJson = JSONArray.fromObject(list);

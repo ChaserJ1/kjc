@@ -10667,9 +10667,7 @@
     if (!root) { return }
     isStaticKey = genStaticKeysCached(options.staticKeys || '');
     isPlatformReservedTag = options.isReservedTag || no;
-    // first pass: mark all non-static nodes.
     markStatic$1(root);
-    // second pass: mark static roots.
     markStaticRoots(root, false);
   }
 

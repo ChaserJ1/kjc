@@ -104,7 +104,6 @@ public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
         String str = JSONUtil.toJsonStr(resultMap);
         final ByteArrayInputStream bain = new ByteArrayInputStream(str.getBytes());
         return new ServletInputStream() {
-            @Override
             public int read() throws IOException {
                 return bain.read();
             }

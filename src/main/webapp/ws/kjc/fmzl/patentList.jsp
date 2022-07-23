@@ -256,9 +256,6 @@
 	                    , { field: 'name', title: name, width: 625, align: 'left', style: 'font-size:medium' }
 	                    , { field: 'desc', title: desc, width: 215, align: 'left', style: 'font-size:medium' }
 	                    , { field: 'openDate', title: openDate, width: 215, align: 'left', style: 'font-size:medium' }
-	                   // , { field: 'inventor', title: '第一发明人', width: 155, align: 'left', style: 'font-size:medium' }
-	                   // , { field: 'appliDate', title: '专利申请日', width: 160, align: 'left', style: 'font-size:medium' }
-	                   // , { field: 'pubNum', title: '专利号', width: 160, align: 'left', style: 'font-size:medium' }
 	                ]]
 	                , data: ${awardJson}
 	                , done: function (res, curr, count) {

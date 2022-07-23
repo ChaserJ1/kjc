@@ -43,10 +43,11 @@ public class LoginFilter implements Filter {
         HttpSession session = servletRequest.getSession();
         // 获得用户请求的URI
         String path = servletRequest.getRequestURI();
-        System.out.println(path);
+
         // 从session里取用户信息
         String username = (String) session.getAttribute("username");
         // 无需过滤的页面
+
 //        if(path.indexOf("/login.jsp") > -1 || path.indexOf(".ttf") > -1 || path.indexOf(".css") > -1 || path.indexOf(".js") > -1
 //        		|| path.indexOf(".png") > -1 || path.indexOf(".jpg") > -1 || path.indexOf("/login.do") > -1 || path.indexOf(".html") > -1
 //        		|| path.indexOf("/cugbResearchers.do") > -1|| path.indexOf("/cugbFunds.do") > -1|| path.indexOf("/cugbPapers.do") > -1
