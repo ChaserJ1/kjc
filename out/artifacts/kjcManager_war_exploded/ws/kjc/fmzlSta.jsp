@@ -163,10 +163,30 @@
 <%--                    </div>--%>
 
                     <div class="btn-wrap" style="text-align: center;margin-top: 10px;">
-                        <el-button @click="showCase1()" type="primary" size="mini">转化专利</el-button>
-                        <el-button @click="showCase2()" type="primary" size="mini">发明专利</el-button>
-                        <el-button @click="showCase3()" type="primary" size="mini">实用新型</el-button>
-                        <el-button @click="showCase4()" type="primary" size="mini">外观设计</el-button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            <form action="${PATH}/fmzl/zhzl.do" method="post">
+                                <input type="hidden" name="patent" value="转化专利">
+                                <input type="submit" value="转化专利">
+                            </form>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            <form action="${PATH}/fmzl/zhzl.do" method="post">
+                                <input type="hidden" name="patent" value="发明专利">
+                                <input type="submit" value="发明专利">
+                            </form>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            <form action="${PATH}/fmzl/zhzl.do" method="post">
+                                <input type="hidden" name="patent" value="实用新型">
+                                <input type="submit" value="实用新型">
+                            </form>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            <form action="${PATH}/fmzl/zhzl.do" method="post">
+                                <input type="hidden" name="patent" value="外观设计">
+                                <input type="submit" value="外观设计">
+                            </form>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -266,24 +286,13 @@
 <script src="${PATH}/ws/cugb/js/axios.min.js"></script>
 <script src="${PATH}/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
 <script>
+
     new Vue({
         el: '#app',
         data: function () {
             return { visible: false }
         },
         methods: {
-            showCase1() {
-                window.location.href = "/kjcManager/fmzl/zhzl.do?patent='转换专利'"
-            },
-            showCase2() {
-                window.location.href = "/kjcManager/fmzl/zhzl.do?patent='发明专利'"
-            },
-            showCase3() {
-                window.location.href = "/kjcManager/fmzl/zhzl.do?patent='实用新型'"
-            },
-            showCase4() {
-                window.location.href = "/kjcManager/fmzl/zhzl.do?patent='外观设计'"
-            }
         }
     });
 </script>
