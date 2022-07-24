@@ -155,13 +155,6 @@
                 <!-- 移动端-->
                 <div class="m_detail_info"><label>发布时间：${addTime}</label></div>
                 <div id="app">
-<%--                    <div class="btn-wrap" style="text-align: center;margin-top: 10px;margin-top: 10px;">--%>
-<%--                        <a href="${PATH}/fmzl/zhzl.do?patent=转化专利" class="btn btn-sm btn-primary">转化专利</a>--%>
-<%--                        <a href="${PATH}/fmzl/zhzl.do?patent=发明专利" class="btn btn-sm btn-primary">发明专利</a>--%>
-<%--                        <a href="${PATH}/fmzl/zhzl.do?patent=实用新型" class="btn btn-sm btn-primary">实用新型</a>--%>
-<%--                        <a href="${PATH}/fmzl/zhzl.do?patent=外观设计" class="btn btn-sm btn-primary">外观设计</a>--%>
-<%--                    </div>--%>
-
                     <div class="btn-wrap" style="text-align: center;margin-top: 10px;">
                         <button type="button" class="btn btn-primary btn-sm">
                             <form action="${PATH}/fmzl/zhzl.do" method="post">
