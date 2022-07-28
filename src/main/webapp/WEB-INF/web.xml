@@ -112,7 +112,22 @@
 		<auth-method>BASIC</auth-method>
 	</login-config>
 
-	<error-page>
+    <error-page>
+        <error-code>400</error-code>
+        <location>/WEB-INF/errors/400.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>401</error-code>
+        <location>/WEB-INF/errors/401.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>403</error-code>
+        <location>/WEB-INF/errors/403.jsp</location>
+    </error-page>
+
+    <error-page>
 		<error-code>404</error-code>
 		<location>/WEB-INF/errors/404.jsp</location>
 	</error-page>
