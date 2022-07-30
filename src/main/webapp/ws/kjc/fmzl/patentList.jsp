@@ -103,7 +103,6 @@
             $('html').css('font-size', '');
             document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/pcmedia.css">');
             if (IEVersion()) {
-                // document.write('<link rel="stylesheet" type="text/css" href="/kjc/css/pcIe.css">');
                 loadJS('/kjcManager/ws/cugb/js/pclist.js');
             } else {
                 loadJS('/kjcManager/ws/cugb/js/pclist.js');

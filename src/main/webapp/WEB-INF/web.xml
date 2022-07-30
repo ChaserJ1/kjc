@@ -60,6 +60,16 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
+	<filter>
+		<filter-name>CrosFilter</filter-name>
+		<filter-class>com.kjcManager.filter.CrosFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CrosFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
 	<servlet>
 		<servlet-name>springServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

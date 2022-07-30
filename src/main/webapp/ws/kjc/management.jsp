@@ -29,7 +29,6 @@
     <link href="${PATH}/ws/assets/css/components/custom-modal.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 	<link rel="stylesheet" type="text/css" href="${PATH}/ws/assets/css/button.css" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="${PATH}/ws/cugb/font/css2.css" rel="stylesheet">
 	<style>
 		.panel-head{
