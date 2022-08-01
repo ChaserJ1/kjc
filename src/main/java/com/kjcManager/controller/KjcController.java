@@ -509,9 +509,69 @@ public class KjcController {
 	}
 
 	@RequestMapping("/fmzl/zhzl.do")
-	public String fmzlYxdb(HttpServletResponse response, @RequestParam("patent") String patent,
-						   Model model) {
+	public String fmzlYxdb(HttpServletResponse response, Model model) {
 		String toPage = "forward:/ws/kjc/fmzl/patentList.jsp";
+		String patent = "转化专利";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
+		response.setHeader("access-control-allow-origin", "*");
+		List<Patent> list = kjcService.getPatentByCategory(patent);
+		ws_files file = kjcService.getCugbData().get(3);
+		JSONArray awardJson = JSONArray.fromObject(list);
+		model.addAttribute("awardJson", awardJson);
+		model.addAttribute("title", file.getName());
+		model.addAttribute("type", patent);
+		model.addAttribute("addTime", file.getAddTime());
+		return toPage;
+	}
+
+	@RequestMapping("/fmzl/fmzl.do")
+	public String fmzlYxdb2(HttpServletResponse response, Model model) {
+		String toPage = "forward:/ws/kjc/fmzl/patentList.jsp";
+		String patent = "发明专利";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
+		response.setHeader("access-control-allow-origin", "*");
+		List<Patent> list = kjcService.getPatentByCategory(patent);
+		ws_files file = kjcService.getCugbData().get(3);
+		JSONArray awardJson = JSONArray.fromObject(list);
+		model.addAttribute("awardJson", awardJson);
+		model.addAttribute("title", file.getName());
+		model.addAttribute("type", patent);
+		model.addAttribute("addTime", file.getAddTime());
+		return toPage;
+	}
+
+	@RequestMapping("/fmzl/syxx.do")
+	public String fmzlYxdb3(HttpServletResponse response, Model model) {
+		String toPage = "forward:/ws/kjc/fmzl/patentList.jsp";
+		String patent = "实用新型";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
+		response.setHeader("access-control-allow-origin", "*");
+		List<Patent> list = kjcService.getPatentByCategory(patent);
+		ws_files file = kjcService.getCugbData().get(3);
+		JSONArray awardJson = JSONArray.fromObject(list);
+		model.addAttribute("awardJson", awardJson);
+		model.addAttribute("title", file.getName());
+		model.addAttribute("type", patent);
+		model.addAttribute("addTime", file.getAddTime());
+		return toPage;
+	}
+
+	@RequestMapping("/fmzl/wgsj.do")
+	public String fmzlYxdb4(HttpServletResponse response, Model model) {
+		String toPage = "forward:/ws/kjc/fmzl/patentList.jsp";
+		String patent = "外观设计";
 		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
 		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
 		response.setHeader("X-Download-Options", "noopen");

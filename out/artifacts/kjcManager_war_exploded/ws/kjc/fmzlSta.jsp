@@ -157,28 +157,16 @@
                 <div id="app">
                     <div class="btn-wrap" style="text-align: center;margin-top: 10px;">
                         <button type="button" class="btn btn-primary btn-sm">
-                            <form action="${PATH}/fmzl/zhzl.do" method="post">
-                                <input type="hidden" name="patent" value="转化专利">
-                                <input type="submit" value="转化专利">
-                            </form>
+                            <a style="color: white;" href="${PATH}/fmzl/zhzl.do">转化专利</a>
                         </button>
                         <button type="button" class="btn btn-primary btn-sm">
-                            <form action="${PATH}/fmzl/zhzl.do" method="post">
-                                <input type="hidden" name="patent" value="发明专利">
-                                <input type="submit" value="发明专利">
-                            </form>
+                            <a style="color: white;" href="${PATH}/fmzl/fmzl.do">发明专利</a>
                         </button>
                         <button type="button" class="btn btn-primary btn-sm">
-                            <form action="${PATH}/fmzl/zhzl.do" method="post">
-                                <input type="hidden" name="patent" value="实用新型">
-                                <input type="submit" value="实用新型">
-                            </form>
+                            <a style="color: white;" href="${PATH}/fmzl/syxx.do">实用新型</a>
                         </button>
                         <button type="button" class="btn btn-primary btn-sm">
-                            <form action="${PATH}/fmzl/zhzl.do" method="post">
-                                <input type="hidden" name="patent" value="外观设计">
-                                <input type="submit" value="外观设计">
-                            </form>
+                            <a style="color: white;" href="${PATH}/fmzl/wgsj.do">外观设计</a>
                         </button>
                     </div>
                 </div>
