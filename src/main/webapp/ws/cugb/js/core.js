@@ -9,9 +9,6 @@
  * https://github.com/amcharts/amcharts4/blob/master/LICENSE
  *
  * One of the amCharts commercial licenses. Details and pricing:
- * https://www.amcharts.com/online-store/
- * https://www.amcharts.com/online-store/licenses-explained/
- *
  *
  * PLEASE DO NOT REMOVE THIS COPYRIGHT NOTICE.
  * @hidden

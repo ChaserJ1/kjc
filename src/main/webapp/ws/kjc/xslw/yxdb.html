@@ -7,7 +7,6 @@
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="*">
     <title>科技处</title>
-    <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="/kjcManager/ws/cugb/css/swiper.min.css">
     <link rel="stylesheet" href="/kjcManager/ws/cugb/css/idangerous.swiper.css">
     <link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/hometop.css">
@@ -108,7 +107,6 @@
             $('html').css('font-size', '');
             document.write('<link rel="stylesheet" type="text/css" href="/kjcManager/ws/cugb/css/pcmedia.css">');
             if (IEVersion()) {
-                // document.write('<link rel="stylesheet" type="text/css" href="/kjc/css/pcIe.css">');
                 loadJS('/kjcManager/ws/cugb/js/pclist.js');
             } else {
                 loadJS('/kjcManager/ws/cugb/js/pclist.js');
@@ -296,11 +294,8 @@
     }
 </style>
 <script src="/kjcManager/ws/cugb/js/echarts.js"></script>
-<!-- import Vue before Element -->
 <script src="/kjcManager/ws/cugb/js/vue.js"></script>
-<!-- import JavaScript -->
 <script src="/kjcManager/ws/cugb/lib-master/index.js" type="text/javascript" charset="utf-8"></script>
-<!-- import axios cdn -->
 <script src="/kjcManager/ws/cugb/js/axios.min.js"></script>
 <script>
     new Vue({
@@ -402,7 +397,7 @@
                         headers: { "Content-Type": "application/json", 'Access-Control-Allow-Origin': '*' },
                     }).then(res => {
                         resolve(res);
-                        console.log(res.data, 111)
+                        // console.log(res.data, 111)
                         this.tableData = res.data.kjcQueryList
                     });
                 });
