@@ -41,19 +41,19 @@ public class HttpUtil {
 			int statusCode = httpClient.executeMethod(getMethod);
 
 			if (statusCode != 200) {
-				System.err.println("请求出错: " + getMethod.getStatusLine());
+//				System.err.println("请求出错: " + getMethod.getStatusLine());
 			}
 
 			Header[] headers = getMethod.getResponseHeaders();
 			for (Header h : headers) {
-				System.out
-						.println(h.getName() + "------------ " + h.getValue());
+//				System.out
+//						.println(h.getName() + "------------ " + h.getValue());
 			}
 			byte[] responseBody = getMethod.getResponseBody();
 			response = new String(responseBody, param);
-			System.out.println("----------response:" + response);
+//			System.out.println("----------response:" + response);
 		} catch (HttpException e) {
-			System.out.println("请检查输入的URL!");
+//			System.out.println("请检查输入的URL!");
 			e.printStackTrace();
 		} catch (IOException e) {
 			System.out.println("发生网络异常!");
@@ -78,7 +78,7 @@ public class HttpUtil {
 			if (res.getStatusLine().getStatusCode() == 200) {
 				String result = EntityUtils.toString(res.getEntity());
 				response = JSONObject.fromObject(result);
-				System.out.println("----------response:" + response.toString());
+//				System.out.println("----------response:" + response.toString());
 			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
@@ -99,7 +99,7 @@ public class HttpUtil {
 			if (res.getStatusLine().getStatusCode() == 200) {
 				String result = EntityUtils.toString(res.getEntity());
 				response = JSONObject.fromObject(result);
-				System.out.println("----------response:" + response.toString());
+//				System.out.println("----------response:" + response.toString());
 			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
@@ -121,7 +121,7 @@ public class HttpUtil {
 			if (res.getStatusLine().getStatusCode() == 200) {
 				String result = EntityUtils.toString(res.getEntity());
 				response = JSONObject.fromObject(result);
-				System.out.println("----------response:" + response.toString());
+//				System.out.println("----------response:" + response.toString());
 			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
@@ -143,7 +143,7 @@ public class HttpUtil {
 			if (res.getStatusLine().getStatusCode() == 200) {
 				result = new String(EntityUtils.toString(res.getEntity())
 						.getBytes("ISO-8859-1"), "UTF8");
-				System.out.println("----------response:" + result);
+//				System.out.println("----------response:" + result);
 			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
@@ -170,7 +170,7 @@ public class HttpUtil {
 		 dept.setTypeCode("null");
 		 dept.setYear("2012~2017");
 		 JSONObject reObject = JSONObject.fromObject(dept);
-		 System.out.println("----------request:" + reObject.toString());
+//		 System.out.println("----------request:" + reObject.toString());
 		 doPost(url, reObject.toString(), "UTF-8");
 	}
 }

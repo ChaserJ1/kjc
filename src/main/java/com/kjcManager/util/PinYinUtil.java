@@ -213,7 +213,7 @@ public class PinYinUtil {
 //		System.out.println(getPaperAuthorOrigin("郑新奇"));
 //		System.out.println(getPaperAuthorOrigin("李梅"));
 //		System.out.println(getPaperAuthorOrigin("卜灵"));
-		System.out.println(getPaperAuthorOrigin("努尔古丽·穆斯林"));
+//		System.out.println(getPaperAuthorOrigin("努尔古丽·穆斯林"));
 		
 	}
 

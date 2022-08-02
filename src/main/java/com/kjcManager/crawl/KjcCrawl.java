@@ -44,7 +44,7 @@ public class KjcCrawl {
 				typeName = KjcUtils.TYPE_NAME_MSJJ;
 			}
 		}
-		System.out.println(flagCode+"("+flagName+")-"+typeCode+"("+typeName+")-"+deptCode+"("+deptName+")-"+year+"年-"+"第"+curPage+"页");
+//		System.out.println(flagCode+"("+flagName+")-"+typeCode+"("+typeName+")-"+deptCode+"("+deptName+")-"+year+"年-"+"第"+curPage+"页");
 		try {
 			CrawlUtil.trustAllHttpsCertificates();
 			HttpsURLConnection.setDefaultHostnameVerifier(hv);
@@ -54,17 +54,15 @@ public class KjcCrawl {
 			}else if(flagCode.equals(KjcUtils.FLAG_CODE_JJ)){
 				doc = Jsoup.connect(fundUrl).ignoreContentType(true).post();
 			}
-//			System.out.println(doc);
 			Elements elementsByClass = doc.getElementsByClass("list_title");
 			Elements els = elementsByClass.select("table");
 			Elements ele = new Elements();
 			for (Element el : els) {
-//				System.out.println(el);
 				ele = el.select("table").select("tbody").select("tr").select("td");
 				String eleStr = ele.toString();
 				checkId = eleStr.split("\">")[1].split("、")[0];
 				if(!KjcJdbc.checkDataFromDB(flagCode,deptCode,typeCode,checkId,year)){
-					System.out.println("checkId:"+checkId);
+//					System.out.println("checkId:"+checkId);
 					String[] infoTempSplit = eleStr.split(">");
 					//for (int i = 0; i < infoTempSplit.length; i++) {
 					//	System.out.println(infoTempSplit[i]);
@@ -83,8 +81,8 @@ public class KjcCrawl {
 							info= infoTempSplit[0].split("<")[0]+infoTempSplit[1].split("<")[0];
 						}
 					}
-					System.out.println("info:"+info);
-					System.out.println("year:"+year);
+//					System.out.println("info:"+info);
+//					System.out.println("year:"+year);
 					KjcJdbc.writeContextIntoDB(flagCode, flagName, deptCode, deptName, typeCode, typeName, checkId, info, year, curPage);
 					res = true;
 				}
@@ -165,8 +163,8 @@ public class KjcCrawl {
 	static HostnameVerifier hv = new HostnameVerifier() {
 		@Override
 		public boolean verify(String urlHostName, SSLSession session) {
-			System.out.println("Warning: URL Host: " + urlHostName + " vs. "
-					+ session.getPeerHost());
+//			System.out.println("Warning: URL Host: " + urlHostName + " vs. "
+//					+ session.getPeerHost());
 			return false;
 		}
 	};

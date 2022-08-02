@@ -14,13 +14,13 @@ public class JdbcTemplate {
 			// Class.forName("oracle.jdbc.driver.OracleDriver");// 加载Oracle驱动程序
 			Class.forName("com.mysql.jdbc.Driver");// 加载Oracle驱动程序
 			//Class.forName("com.mysql.cj.jdbc.Driver");
-			System.out.println("开始尝试连接数据库！");
+//			System.out.println("开始尝试连接数据库！");
 			// String user = "inituser";// 用户名,系统默认的账户名
 			// String password = "initpass";// 你安装时选设置的密码
 			String user = "laqgiF0NOj8=";// 用户名,系统默认的账户名
 			String password = "faLhkmlb6j+TMQdMFS/O0w==";// 你安装时选设置的密码
 			con = DriverManager.getConnection(url, user, password);// 获取连接
-			System.out.println("连接成功！");
+//			System.out.println("连接成功！");
 //			String sql = "{call SYSTEM.GETCOMMONUSERPASS(?,?)}";// 预编译语句，“？”代表参数
 //			pre = con.prepareCall(sql);// 实例化预编译语句
 //			pre.registerOutParameter(1, Types.BLOB);
@@ -38,7 +38,7 @@ public class JdbcTemplate {
 					pre.close();
 				if (con != null)
 					con.close();
-				System.out.println("数据库连接已关闭！");
+//				System.out.println("数据库连接已关闭！");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -74,22 +74,22 @@ public class JdbcTemplate {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");// 加载Oracle驱动程序
 			//Class.forName("com.mysql.jdbc.Driver");
-			System.out.println("开始尝试连接数据库！");
+//			System.out.println("开始尝试连接数据库！");
 			con = DriverManager.getConnection(url, username, password);// 获取连接
-			System.out.println("连接成功！");
+//			System.out.println("连接成功！");
 			if (con != null) {
 				return true;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("设置数据库用户、密码失败！");
+//			System.out.println("设置数据库用户、密码失败！");
 		} finally {
 			try {
 				// 逐一将上面的几个对象关闭，因为不关闭的话会影响性能、并且占用资源
 				// 注意关闭的顺序，最后使用的最先关闭
 				if (con != null)
 					con.close();
-				System.out.println("数据库连接已关闭！");
+//				System.out.println("数据库连接已关闭！");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

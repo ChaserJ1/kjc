@@ -142,20 +142,20 @@ public class DESUtil {
 		String username = "root";
 		String password = "admin123";
 
-		System.out.println("url: " + url);
-		System.out.println("username: " + username);
-		System.out.println("password: " + password);
+//		System.out.println("url: " + url);
+//		System.out.println("username: " + username);
+//		System.out.println("password: " + password);
 		String e_url = encrypt(url, key);
 		String e_username = encrypt(username, key);
 		String e_password = encrypt(password, key);
-		System.out.println("加密后url: " + e_url);
-		System.out.println("加密后username: " + e_username);
-		System.out.println("加密后password: " + e_password);
+//		System.out.println("加密后url: " + e_url);
+//		System.out.println("加密后username: " + e_username);
+//		System.out.println("加密后password: " + e_password);
 		String d_url = decrypt(e_url, key);
 		String d_username = decrypt(e_username, key);
 		String d_password = decrypt(e_password, key);
-		System.out.println("解密后url: " + d_url);
-		System.out.println("解密后username: " + d_username);
-		System.out.println("解密后password: " + d_password);
+//		System.out.println("解密后url: " + d_url);
+//		System.out.println("解密后username: " + d_username);
+//		System.out.println("解密后password: " + d_password);
 	}
 }

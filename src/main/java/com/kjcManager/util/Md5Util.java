@@ -45,8 +45,8 @@ public final class Md5Util {
 		for (byte b : byteArr) {
 			Arrays.fill(cs, '0');
 			String hex = Integer.toHexString(b & 0xff);
-			System.arraycopy(hex.toCharArray(), 0, cs,
-					cs.length - hex.length(), hex.length());
+//			System.arraycopy(hex.toCharArray(), 0, cs,
+//					cs.length - hex.length(), hex.length());
 			buf.append(new String(cs));
 		}
 		return buf.toString();

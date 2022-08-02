@@ -6,7 +6,8 @@
 .m_home_headerbox_cover{
     display: block;
     z-index: 100;
-    background: rgba(9, 42, 68, 0.88) url() no-repeat top center/100% auto;
+    /*background: rgba(9, 42, 68, 0.88) url() no-repeat top center/100% auto;*/
+    background: rgba(9, 42, 68, 0.88) no-repeat top center/100% auto;
     opacity: 0;
     visibility: hidden;
     height: 100%;

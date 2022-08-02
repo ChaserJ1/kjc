@@ -19,10 +19,10 @@ public class KjcJdbc {
 		String user = com.kjcManager.util.Jdbc.getDataname();
 		String password = com.kjcManager.util.Jdbc.getDatapass();
 		String driver = com.kjcManager.util.Jdbc.getProperty("jdbc.driver");
-		System.out.println(url);
-		System.out.println(user);
-		System.out.println(password);
-		System.out.println(driver);
+//		System.out.println(url);
+//		System.out.println(user);
+//		System.out.println(password);
+//		System.out.println(driver);
 		try {
 			Class.forName(driver);
 			conn = DriverManager.getConnection(url, user, password);
