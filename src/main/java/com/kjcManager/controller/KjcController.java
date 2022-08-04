@@ -55,9 +55,6 @@ public class KjcController {
 		for (int i = curYear - 9; i < curYear + 1; i++) {
 			ws_a_cugb_k.add(i + "");
 		}
-		for (int i = 0; i < ws_a_cugb_k.size(); i++) {
-			System.out.println(ws_a_cugb_k.get(i));
-		}
 		return ws_a_cugb_k;
 	}
 
@@ -484,11 +481,9 @@ public class KjcController {
 	public static String getRequestJsonString(HttpServletRequest request, String charset) throws IOException {
 		String submitMehtod = request.getMethod();
 		if (submitMehtod.equals("GET")) {
-			System.out.println(new String(request.getQueryString().getBytes("GBK"), charset).replaceAll("%22", "\""));
 			return new String(request.getQueryString().getBytes("GBK"), charset).replaceAll("%22", "\"");
 		}
 		byte[] buffer = getRequestPostBytes(request);
-		System.out.println(new String(buffer, charset));
 		return new String(buffer, charset);
 	}
 

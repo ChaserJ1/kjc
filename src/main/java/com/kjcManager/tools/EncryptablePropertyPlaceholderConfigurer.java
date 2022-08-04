@@ -20,8 +20,7 @@ public class EncryptablePropertyPlaceholderConfigurer extends PropertyPlaceholde
             	  String username = props.getProperty("jdbc.username");  
                   if (username != null) {  
                   	props.setProperty("jdbc.username", DESUtil.decrypt(username,key));  
-//                  	System.out.println(props.getProperty("jdbc.username"));
-                  }  
+                  }
                     
                   String password = props.getProperty("jdbc.password");  
                   if (password != null) {  
