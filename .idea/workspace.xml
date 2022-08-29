@@ -7,10 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7758ee18-8bbb-40ad-b782-7693165c5d80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kjcManager/util/DESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kjcManager/util/DESUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/WEB-INF/classes/com/kjcManager/controller/KjcController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/WEB-INF/classes/com/kjcManager/controller/KjcController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/WEB-INF/classes/com/kjcManager/services/KjcService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kjcManager_war_exploded/WEB-INF/classes/com/kjcManager/services/KjcService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kjcManager/services/KjcService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kjcManager/services/KjcService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,65 +27,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="440" column="57" lean-forward="true" selection-start-line="440" selection-start-column="57" selection-end-line="440" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="389" column="54" lean-forward="true" selection-start-line="389" selection-start-column="54" selection-end-line="389" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/services/KjcService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="252" column="43" lean-forward="true" selection-start-line="252" selection-start-column="43" selection-end-line="252" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/nstProject.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1056">
+              <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/fundList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2112">
+              <caret line="249" column="25" lean-forward="true" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="230" column="62" selection-start-line="230" selection-start-column="62" selection-end-line="230" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/Md5Util.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/yxdb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            <state relative-caret-position="260">
+              <caret line="378" column="51" selection-start-line="378" selection-start-column="51" selection-end-line="378" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/Jdbc.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/paperList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-224">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/CrawlUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/crawl/KjcUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/crawl/KjcJdbc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-532">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/tools/EncryptablePropertyPlaceholderConfigurer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="198">
+              <caret line="346" column="63" selection-start-line="346" selection-start-column="55" selection-end-line="346" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -92,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/tools/JdbcTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+            <state relative-caret-position="1012">
+              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -102,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/DESUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3014">
-              <caret line="147" column="41" lean-forward="true" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
+              <caret line="147" column="41" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -118,13 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>kjcQuery</find>
-      <find>yxdb</find>
-      <find>kjcQuery.do</find>
-      <find>cugbFunds.do</find>
-      <find>fundList</find>
-      <find>fund.do</find>
-      <find>/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/</find>
       <find>/kyxm/css/index.css</find>
       <find>index.css</find>
       <find>v=256</find>
@@ -148,6 +151,13 @@
       <find>css/index.css</find>
       <find>System</find>
       <find>dynamic native SQL query</find>
+      <find>xslw/yxdb.do</find>
+      <find>xslw/</find>
+      <find>cugbFund</find>
+      <find>nst</find>
+      <find>huojiang</find>
+      <find>paperLis</find>
+      <find>paperList</find>
     </findStrings>
     <replaceStrings>
       <replace>${PATH}</replace>
@@ -163,9 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/dark.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/charts.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/material.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/amcharts.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/amchartsdark.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/ws/cugb/js/themes/animated.js" />
@@ -205,15 +212,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/util/RSAUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/xss/XssHttpServletRequestWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/util/MyExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/crawl/KjcCrawl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/crawl/KjcJdbc.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/tools/EncryptablePropertyPlaceholderConfigurer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ehcache/ehcache-shiro.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/tools/JdbcTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/util/DESUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/fundList.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/services/KjcService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/paperList.html" />
       </list>
     </option>
   </component>
@@ -260,10 +270,10 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-25" />
-    <option name="y" value="100" />
-    <option name="width" value="1940" />
-    <option name="height" value="945" />
+    <option name="x" value="142" />
+    <option name="y" value="101" />
+    <option name="width" value="1630" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -318,86 +328,6 @@
               <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="crawl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -422,7 +352,36 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="ws" type="462c0819:PsiDirectoryNode" />
+              <item name="cugb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ws" type="462c0819:PsiDirectoryNode" />
               <item name="kjc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ws" type="462c0819:PsiDirectoryNode" />
+              <item name="kjc" type="462c0819:PsiDirectoryNode" />
+              <item name="kyxm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kjcManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kjcManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ws" type="462c0819:PsiDirectoryNode" />
+              <item name="kjc" type="462c0819:PsiDirectoryNode" />
+              <item name="xslw" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -438,7 +397,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hive-rel-release-2.1.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -458,11 +417,11 @@
       <recent name="com.webscience.json" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Develop\kjcManager\src\main\webapp\ws\kjc\kyxm" />
+      <recent name="D:\Develop\kjcManager\src\main\webapp\ws\kjc\xslw" />
       <recent name="D:\Develop\kjcManager\src\main\webapp\WEB-INF\errors" />
       <recent name="D:\Develop\kjcManager\src\main\webapp\ws\cugb\font" />
       <recent name="D:\Develop\kjcManager\src\main\webapp\ws\cugb" />
-      <recent name="D:\Develop\kjcManager\src\main\webapp\WEB-INF" />
-      <recent name="D:\Develop\kjcManager\src\main\webapp\ws\cugb\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -578,8 +537,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Test" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
       <item itemvalue="Application.DESUtil" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
     </list>
     <recent_temporary>
       <list>
@@ -690,17 +649,22 @@
       <workItem from="1659597892290" duration="266000" />
       <workItem from="1659662199598" duration="652000" />
       <workItem from="1659670218125" duration="179000" />
-      <workItem from="1661740103788" duration="1585000" />
+      <workItem from="1661740103788" duration="2344000" />
+      <workItem from="1661778170910" duration="684000" />
+      <workItem from="1661778955738" duration="1124000" />
+      <workItem from="1661781002143" duration="1311000" />
+      <workItem from="1661782349189" duration="1621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166582000" />
+    <option name="totallyTimeSpent" value="172081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21045576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22117962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -710,8 +674,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32825485" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48060942" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47506925" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48060942" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35457063" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -719,7 +683,7 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36149585" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4238227" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -729,7 +693,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Flutter Inspector" order="6" />
@@ -744,26 +708,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/js/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/layui/layui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret column="21118" selection-start-column="21118" selection-end-column="21118" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/layui-v2.6.8/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-293">
@@ -778,38 +722,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/cugb/layui-v2.6.8/免责声明.url">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/nstProject.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="429" column="35" lean-forward="true" selection-start-line="429" selection-start-column="35" selection-end-line="429" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/sjlw.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/yxdb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1208">
-          <caret line="411" column="42" lean-forward="true" selection-start-line="411" selection-start-column="42" selection-end-line="411" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbFunds.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="252" column="58" lean-forward="true" selection-start-line="252" selection-start-column="58" selection-end-line="252" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -992,13 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/services/KjcService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/fmzl/patentList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1013,20 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="486" column="26" selection-start-line="486" selection-start-column="26" selection-end-line="486" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4818">
-          <caret line="219" column="29" lean-forward="true" selection-start-line="219" selection-start-column="29" selection-end-line="219" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1034,6 +929,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/configs.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/Md5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/tools/EncryptablePropertyPlaceholderConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1046,7 +965,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
+        <state relative-caret-position="88">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
@@ -1060,53 +979,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/crawl/KjcUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="88">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/crawl/KjcJdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
+        <state relative-caret-position="374">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/configs.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/tools/EncryptablePropertyPlaceholderConfigurer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/cugbFunds.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="770">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/tools/JdbcTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+        <state relative-caret-position="1012">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/DESUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3014">
-          <caret line="147" column="41" lean-forward="true" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
+          <caret line="147" column="41" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/huojiangList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="194">
+          <caret line="230" column="62" selection-start-line="230" selection-start-column="62" selection-end-line="230" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/util/Md5Util.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/services/KjcService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        <state relative-caret-position="370">
+          <caret line="252" column="43" lean-forward="true" selection-start-line="252" selection-start-column="43" selection-end-line="252" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/nstProject.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1056">
+          <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/yxdb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="389" column="54" lean-forward="true" selection-start-line="389" selection-start-column="54" selection-end-line="389" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kjcManager/controller/KjcController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="440" column="57" lean-forward="true" selection-start-line="440" selection-start-column="57" selection-end-line="440" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/paperList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="346" column="63" selection-start-line="346" selection-start-column="55" selection-end-line="346" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/kyxm/fundList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2112">
+          <caret line="249" column="25" lean-forward="true" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ws/kjc/xslw/yxdb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="378" column="51" selection-start-line="378" selection-start-column="51" selection-end-line="378" selection-end-column="51" />
         </state>
       </provider>
     </entry>

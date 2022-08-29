@@ -226,13 +226,13 @@
                 , even: true //开启隔行背景
                 , size: 'lg' //小尺寸的表格
                 , cols: [[ //表头
-                    // { field: 'id', title: '序号', width: 70, align: 'center', style: 'font-size:medium' }
-                    { field: 'name', title: '成果名称', width: 360, align: 'left', style: 'font-size:medium' }
-                    , { field: 'level', title: '等级', width: 110, align: 'left', style: 'font-size:medium' }
+                    { field: 'id', title: '序号', width: 70, align: 'center', style: 'font-size:medium' }
+                    , { field: 'name', title: '成果名称', width: 340, align: 'left', style: 'font-size:medium' }
+                    , { field: 'level', title: '等级', width: 100, align: 'left', style: 'font-size:medium' }
                     , { field: 'year', title: '年度', width: 110, align: 'left', style: 'font-size:medium' }
-                    , { field: 'type', title: '奖项类型', width: 250, align: 'left', style: 'font-size:medium' }
-                    , { field: 'person', title: '获奖人', width: 256, align: 'left', style: 'font-size:medium' }
-                    , { field: 'sort', title: '单位排名', width: 110, align: 'center', style: 'font-size:medium' }
+                    , { field: 'type', title: '奖项类型', width: 240, align: 'left', style: 'font-size:medium' }
+                    , { field: 'person', title: '获奖人', width: 236, align: 'left', style: 'font-size:medium' }
+                    , { field: 'sort', title: '单位排名', width: 100, align: 'center', style: 'font-size:medium' }
                 ]]
                 , data: ${awardJson}
                 , done: function (res, curr, count) {

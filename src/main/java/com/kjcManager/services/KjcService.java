@@ -232,7 +232,7 @@ public class KjcService {
 			for (int i = 0; i < resultList.size(); i++) {
 				Object[] obj = (Object[]) resultList.get(i);
 				ws_award award = new ws_award();
-				award.setId((int) obj[0]);
+				award.setId(i + 1);
 				award.setName(obj[1] == null ? "" : obj[1].toString());
 				award.setLevel(obj[2] == null ? "" : obj[2].toString());
 				award.setYear(obj[3] == null ? "" : obj[3].toString());

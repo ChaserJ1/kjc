@@ -350,6 +350,16 @@ public class KjcController {
 		return toPage;
 	}
 
+	@RequestMapping(value = "/kyxm/fundList.do", method = { RequestMethod.POST, RequestMethod.GET })
+	public String kyxmFund(HttpServletRequest request, HttpServletResponse response) {
+		String toPage = "forward:/ws/kjc/kyxm/fundList.html";
+		response.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+		response.setHeader("X-Permitted-Cross-Domain-Policies", "all");
+		response.setHeader("X-Download-Options", "noopen");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
+		response.setHeader("Content-Security-Policy", "*");
+		return toPage;
+	}
 
 	@RequestMapping(value = "/kyxm/nstProject.do", method = { RequestMethod.POST, RequestMethod.GET })
 	public String kyxmNstProject(HttpServletRequest request, HttpServletResponse response) {
