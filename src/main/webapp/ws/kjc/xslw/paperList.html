@@ -337,7 +337,6 @@
                     this.typeCode = tCode[1]
                 }
                 json.flagCode = 'paper'
-				//console.log(json)
                 this.json = json
             },
             // 查询列表数据
@@ -345,6 +344,7 @@
                 let hrefUrl = window.location.href;
                 var n = hrefUrl.indexOf("kjcManager");
                 let url = hrefUrl.substr(0, n + 11) + "kjcQuery.do";
+                console.log(url)
                 this.post(url, this.json)
             },
             post(url, param) {
