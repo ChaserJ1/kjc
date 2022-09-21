@@ -148,9 +148,9 @@ public class DESUtil {
 		String e_url = encrypt(url, key);
 		String e_username = encrypt(username, key);
 		String e_password = encrypt(password, key);
-//		System.out.println("加密后url: " + e_url);
-//		System.out.println("加密后username: " + e_username);
-//		System.out.println("加密后password: " + e_password);
+		System.out.println("加密后url: " + e_url);
+		System.out.println("加密后username: " + e_username);
+		System.out.println("加密后password: " + e_password);
 		String d_url = decrypt(e_url, key);
 		String d_username = decrypt(e_username, key);
 		String d_password = decrypt(e_password, key);
