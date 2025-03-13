@@ -22,6 +22,10 @@
             width: 100%;
             height: 500px;
         }
+        .year-link {
+            display: inline-block;
+            margin-right: 3px;
+        }
     </style>
     <script src="${PATH}/ws/cugb/js/jquery-3.6.0.min.js"></script>
     <script src="${PATH}/ws/cugb/js/idangerous.swiper.min.js"></script>
@@ -145,9 +149,42 @@
         <div class="detail_title_box">
 
             <div style="text-align: center;padding-top: 10px;">
-                <a href="${PATH}/xslw/sjlw.do">[全部]</a>
+                <a href="${PATH}/xslw/sjlw.do" >[全部]</a>
+<%--                <c:forEach var="year" items="${years}">--%>
+<%--                    <a style="margin-right: 3px;" href="${PATH}/xslw/sjlw.do?year=${year}">${year}</a>--%>
+<%--                </c:forEach>--%>
                 <c:forEach var="year" items="${years}">
-                    <a style="margin-right: 3px;" href="${PATH}/xslw/sjlw.do?year=${year}">${year}</a>
+                    <form id="yearForm${year}" action="${PATH}/xslw/sjlw.do" method="post">
+                        <input type="hidden" name="year" value="${year}">
+                        <p type="submit" class="year-link">${year}</p>
+                    </form>
+                    <script>
+                        function filterSpecialChars(inputStr) {
+                            // 创建一个正则表达式，匹配所有需要过滤的字符
+                            const regex = /[|&;$%@'"<>()\+,\\]/g;
+                            // 使用正则表达式替换掉所有匹配的字符
+                            const filteredStr = inputStr.replace(regex, '');
+                            return filteredStr;
+                        }
+
+                        document.getElementById('yearForm${year}').addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            var xhr = new XMLHttpRequest();
+                            xhr.open('POST', this.action, true);
+                            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                            const inputValue = this.querySelector('input[name="year"]').value;
+                            const safeValue = filterSpecialChars(inputValue);
+                            // xhr.send(this.querySelector('input[name="year"]').value);
+                            xhr.send(safeValue);
+                            xhr.onload = function() {
+                                if (xhr.status === 200) {
+                                    console.log('请求成功');
+                                } else {
+                                    console.error('请求失败');
+                                }
+                            };
+                        });
+                    </script>
                 </c:forEach>
             </div>
             <div class="detail_title" style="padding-top: 20px;">·中国地质大学（北京）

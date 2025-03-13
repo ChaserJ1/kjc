@@ -138,9 +138,9 @@ public class DESUtil {
 		// String password = "MnVbzmB0Onka";
 		// String url =
 		// "jdbc:mysql://8.141.65.225:3306/kjcManager?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true";
-		String url = "jdbc:mysql://192.168.95.116:3306/webscience_analyze?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true";
+		String url = "jdbc:mysql://127.0.0.1:3306/webscience_analyze?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true";
 		String username = "root";
-		String password = "Lw@admin123";
+		String password = "123456";
 
 //		System.out.println("url: " + url);
 //		System.out.println("username: " + username);

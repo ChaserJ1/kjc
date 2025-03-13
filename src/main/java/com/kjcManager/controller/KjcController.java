@@ -9,9 +9,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.alibaba.fastjson.JSON;
 import com.kjcManager.json.*;
-import com.mysql.cj.x.protobuf.MysqlxDatatypes;
+import com.kjcManager.util.FilterChar;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -394,6 +393,7 @@ public class KjcController {
 		response.setHeader("X-Download-Options", "noopen");
 		response.setHeader("Strict-Transport-Security", "max-age=31536000 ; includeSubDomains");
 		response.setHeader("Content-Security-Policy", "*");
+
 		List<PaperTop> query = kjcService.queryListByYear(year);
 		List<String> years = kjcService.getAllYear();
 		JSONArray awardJson = JSONArray.fromObject(query);
